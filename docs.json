@@ -17,15 +17,13 @@
                         "group": "Getting Started",
                         "pages": [
                             "index",
-                            "quickstart",
-                            "development",
                             "login",
                             "signup",
                             "features-overview"
                         ]
                     },
                     {
-                        "group": "Guides",
+                        "group": "Zoice Tools",
                         "pages": [
                             {
                                 "group": "AI Video",
@@ -71,19 +69,22 @@
                             {
                                 "group": "Image Models",
                                 "pages": [
-                                    "ai-models/image-models/images.mdx"
+                                    "ai-models/Imagen-4",
+                                    "ai-models/Imagen-4-Fast",
+                                    "ai-models/Imagen-4-Ultra",
+                                    "ai-models/Imagen-3",
+                                    "ai-models/Nano-Banana",
+                                    "ai-models/Nano-Banana-Pro"
                                 ]
                             },
                             {
                                 "group": "Video Models",
                                 "pages": [
-                                    "ai-models/video-models/video.mdx"
-                                ]
-                            },
-                            {
-                                "group": "Voice Models",
-                                "pages": [
-                                    "ai-models/voice-models/voice.mdx"
+                                    "ai-models/Veo-3.1",
+                                    "ai-models/Veo-3.1-Fast",
+                                    "ai-models/Veo-3.0",
+                                    "ai-models/Veo-3.0-Fast",
+                                    "ai-models/Veo-2"
                                 ]
                             }
                         ]
@@ -110,12 +111,12 @@
             "anchors": [
                 {
                     "anchor": "Documentation",
-                    "href": "https://mintlify.com/docs",
+                    "href": "https://docs.zoice.com",
                     "icon": "book-open-cover"
                 },
                 {
                     "anchor": "Blog",
-                    "href": "https://mintlify.com/blog",
+                    "href": "https://zoice.com/blog",
                     "icon": "newspaper"
                 }
             ]

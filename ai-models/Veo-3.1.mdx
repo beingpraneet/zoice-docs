@@ -1,0 +1,68 @@
+---
+title: Veo 3.1
+description: Veo 3.1 is an advanced AI video generation model on Zoice, delivering high-quality video outputs with enhanced realism and detail.
+---
+
+## Overview
+
+Veo 3.1 is the latest generation video model available on Zoice. It represents a significant advancement in AI video generation, offering superior quality, better motion coherence, and enhanced visual fidelity.
+
+Use Veo 3.1 when you need premium video content with the highest level of detail and realism.
+
+---
+
+## Key Capabilities
+
+- State-of-the-art video generation quality
+- Enhanced motion coherence and temporal consistency
+- Superior detail and realism in generated videos
+- Advanced understanding of complex prompts
+- Support for various video styles and genres
+
+---
+
+## Best Use Cases
+
+Use Veo 3.1 for the following scenarios:
+
+- Professional video content creation
+- Marketing and promotional videos
+- High-quality visual storytelling
+- Complex scene generation with multiple elements
+- Projects requiring maximum visual fidelity
+
+---
+
+## Model Parameters
+
+The Veo 3.1 model supports the following parameters:
+
+| Parameter | Type | Required | Description |
+|--------|------|----------|-------------|
+| `prompt` | string | Yes | Text description of the video you want to generate |
+| `duration` | number | No | Video length in seconds (default: `5`) |
+| `resolution` | string | No | Output video resolution (default: `1080p`) |
+| `fps` | number | No | Frames per second (default: `24`) |
+| `seed` | number | No | Seed value for reproducible outputs |
+
+---
+
+## Example Request
+
+Below is an example of generating a video using the Veo 3.1 model.
+
+```json
+{
+  "model": "veo-3.1",
+  "prompt": "A serene mountain landscape with flowing waterfalls at golden hour",
+  "duration": 5,
+  "resolution": "1080p",
+  "fps": 24
+}
+```
+
+---
+
+## Credits
+
+Veo 3.1 consumes **450 credits** per video generation.

@@ -1,0 +1,68 @@
+---
+title: Veo 3.0 Fast
+description: Veo 3.0 Fast is an efficient AI video generation model on Zoice, optimized for quick video creation with good quality.
+---
+
+## Overview
+
+Veo 3.0 Fast is a speed-optimized version of Veo 3.0, designed for rapid video generation while maintaining good quality. It's perfect for workflows that prioritize speed and cost-efficiency.
+
+Use Veo 3.0 Fast when you need quick video generation at an affordable credit cost.
+
+---
+
+## Key Capabilities
+
+- Rapid video generation
+- Good quality output
+- Cost-effective processing
+- Suitable for high-volume generation
+- Quick iteration and testing
+
+---
+
+## Best Use Cases
+
+Use Veo 3.0 Fast for the following scenarios:
+
+- Quick video drafts and previews
+- High-volume content generation
+- A/B testing different video concepts
+- Budget-friendly video projects
+- Rapid prototyping and experimentation
+
+---
+
+## Model Parameters
+
+The Veo 3.0 Fast model supports the following parameters:
+
+| Parameter | Type | Required | Description |
+|--------|------|----------|-------------|
+| `prompt` | string | Yes | Text description of the video you want to generate |
+| `duration` | number | No | Video length in seconds (default: `5`) |
+| `resolution` | string | No | Output video resolution (default: `720p`) |
+| `fps` | number | No | Frames per second (default: `24`) |
+| `seed` | number | No | Seed value for reproducible outputs |
+
+---
+
+## Example Request
+
+Below is an example of generating a video using the Veo 3.0 Fast model.
+
+```json
+{
+  "model": "veo-3.0-fast",
+  "prompt": "A colorful garden with butterflies and blooming flowers",
+  "duration": 5,
+  "resolution": "720p",
+  "fps": 24
+}
+```
+
+---
+
+## Credits
+
+Veo 3.0 Fast consumes **250 credits** per video generation.

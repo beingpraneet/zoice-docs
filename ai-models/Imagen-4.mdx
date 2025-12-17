@@ -1,0 +1,71 @@
+---
+title: Imagen 4
+description: Imagen 4 is Google's latest and most advanced AI image generation model on Zoice, delivering exceptional quality, photorealism, and creative control.
+---
+
+## Overview
+
+Imagen 4 is the flagship image generation model available on Zoice, representing the cutting edge of AI image synthesis. It offers unparalleled quality, stunning photorealism, and sophisticated understanding of complex prompts.
+
+Use Imagen 4 when you need the absolute best image quality and the most accurate interpretation of detailed prompts.
+
+---
+
+## Key Capabilities
+
+- State-of-the-art image generation quality
+- Exceptional photorealism and detail
+- Superior prompt understanding and adherence
+- Advanced composition and lighting control
+- Support for complex multi-element scenes
+- Excellent text rendering within images
+
+---
+
+## Best Use Cases
+
+Use Imagen 4 for the following scenarios:
+
+- Professional marketing and advertising materials
+- High-end product photography and mockups
+- Artistic projects requiring maximum quality
+- Complex scenes with multiple subjects
+- Images requiring precise text integration
+- Premium content creation
+
+---
+
+## Model Parameters
+
+The Imagen 4 model supports the following parameters:
+
+| Parameter | Type | Required | Description |
+|--------|------|----------|-------------|
+| `prompt` | string | Yes | Text description of the image you want to generate |
+| `resolution` | string | No | Output image size (default: `1024x1024`) |
+| `aspect_ratio` | string | No | Image aspect ratio (e.g., `16:9`, `1:1`, `4:3`) |
+| `count` | number | No | Number of images to generate (1-4) |
+| `seed` | number | No | Seed value for reproducible outputs |
+| `style` | string | No | Style preset (e.g., `photographic`, `artistic`, `cinematic`) |
+
+---
+
+## Example Request
+
+Below is an example of generating an image using the Imagen 4 model.
+
+```json
+{
+  "model": "imagen-4",
+  "prompt": "A professional product photo of a luxury watch on a marble surface, studio lighting, high detail, 8k quality",
+  "resolution": "1024x1024",
+  "style": "photographic",
+  "count": 1
+}
+```
+
+---
+
+## Credits
+
+Imagen 4 consumes **50 credits** per image generation.

@@ -1,0 +1,71 @@
+---
+title: Imagen 4 Fast
+description: Imagen 4 Fast is an optimized version of Imagen 4 on Zoice, delivering high-quality images with faster generation times.
+---
+
+## Overview
+
+Imagen 4 Fast is a performance-optimized variant of Imagen 4, designed to deliver excellent image quality with significantly reduced generation time. It maintains the advanced capabilities of Imagen 4 while prioritizing speed.
+
+Use Imagen 4 Fast when you need high-quality images quickly without the wait time of the full Imagen 4 model.
+
+---
+
+## Key Capabilities
+
+- Fast image generation with minimal latency
+- High-quality outputs optimized for speed
+- Strong prompt understanding
+- Good photorealism and detail
+- Efficient processing for rapid iterations
+- Lower credit cost than Imagen 4
+
+---
+
+## Best Use Cases
+
+Use Imagen 4 Fast for the following scenarios:
+
+- Rapid prototyping and concept development
+- Quick content creation workflows
+- A/B testing different visual concepts
+- Social media content generation
+- Time-sensitive projects
+- High-volume image generation
+
+---
+
+## Model Parameters
+
+The Imagen 4 Fast model supports the following parameters:
+
+| Parameter | Type | Required | Description |
+|--------|------|----------|-------------|
+| `prompt` | string | Yes | Text description of the image you want to generate |
+| `resolution` | string | No | Output image size (default: `1024x1024`) |
+| `aspect_ratio` | string | No | Image aspect ratio (e.g., `16:9`, `1:1`, `4:3`) |
+| `count` | number | No | Number of images to generate (1-4) |
+| `seed` | number | No | Seed value for reproducible outputs |
+| `style` | string | No | Style preset (e.g., `photographic`, `artistic`, `cinematic`) |
+
+---
+
+## Example Request
+
+Below is an example of generating an image using the Imagen 4 Fast model.
+
+```json
+{
+  "model": "imagen-4-fast",
+  "prompt": "A modern minimalist living room with natural lighting, Scandinavian design, cozy atmosphere",
+  "resolution": "1024x1024",
+  "style": "photographic",
+  "count": 2
+}
+```
+
+---
+
+## Credits
+
+Imagen 4 Fast consumes **35 credits** per image generation.

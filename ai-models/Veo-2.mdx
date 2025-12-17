@@ -1,0 +1,68 @@
+---
+title: Veo 2
+description: Veo 2 is a lightweight AI video generation model on Zoice, perfect for basic video creation needs with minimal credit usage.
+---
+
+## Overview
+
+Veo 2 is an earlier generation video model on Zoice, offering basic video generation capabilities at the lowest credit cost. It's ideal for simple video needs and budget-conscious projects.
+
+Use Veo 2 when you need basic video generation with minimal credit consumption.
+
+---
+
+## Key Capabilities
+
+- Basic video generation functionality
+- Lowest credit consumption
+- Fast processing time
+- Simple and straightforward outputs
+- Good for basic animations and simple scenes
+
+---
+
+## Best Use Cases
+
+Use Veo 2 for the following scenarios:
+
+- Simple animations and basic videos
+- Placeholder video content
+- Budget-limited projects
+- Learning and experimentation
+- High-volume basic video generation
+
+---
+
+## Model Parameters
+
+The Veo 2 model supports the following parameters:
+
+| Parameter | Type | Required | Description |
+|--------|------|----------|-------------|
+| `prompt` | string | Yes | Text description of the video you want to generate |
+| `duration` | number | No | Video length in seconds (default: `5`) |
+| `resolution` | string | No | Output video resolution (default: `720p`) |
+| `fps` | number | No | Frames per second (default: `24`) |
+| `seed` | number | No | Seed value for reproducible outputs |
+
+---
+
+## Example Request
+
+Below is an example of generating a video using the Veo 2 model.
+
+```json
+{
+  "model": "veo-2",
+  "prompt": "A simple sunset over calm water",
+  "duration": 5,
+  "resolution": "720p",
+  "fps": 24
+}
+```
+
+---
+
+## Credits
+
+Veo 2 consumes **200 credits** per video generation.

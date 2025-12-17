@@ -1,0 +1,71 @@
+---
+title: Imagen 3
+description: Imagen 3 is Google's previous generation AI image model on Zoice, offering excellent quality and reliability at a competitive price point.
+---
+
+## Overview
+
+Imagen 3 is a proven image generation model on Zoice, representing Google's third-generation image synthesis technology. It offers excellent quality, reliable performance, and great value for a wide range of image generation needs.
+
+Use Imagen 3 when you need high-quality images with proven reliability and cost-effectiveness.
+
+---
+
+## Key Capabilities
+
+- Excellent image generation quality
+- Strong photorealism and detail
+- Reliable and consistent outputs
+- Good prompt understanding
+- Balanced performance and quality
+- Cost-effective for high-volume generation
+
+---
+
+## Best Use Cases
+
+Use Imagen 3 for the following scenarios:
+
+- General-purpose image generation
+- Content creation for blogs and websites
+- Social media graphics and posts
+- Educational and presentation materials
+- E-commerce product images
+- Budget-conscious professional projects
+
+---
+
+## Model Parameters
+
+The Imagen 3 model supports the following parameters:
+
+| Parameter | Type | Required | Description |
+|--------|------|----------|-------------|
+| `prompt` | string | Yes | Text description of the image you want to generate |
+| `resolution` | string | No | Output image size (default: `1024x1024`) |
+| `aspect_ratio` | string | No | Image aspect ratio (e.g., `16:9`, `1:1`, `4:3`) |
+| `count` | number | No | Number of images to generate (1-4) |
+| `seed` | number | No | Seed value for reproducible outputs |
+| `style` | string | No | Style preset (e.g., `photographic`, `artistic`) |
+
+---
+
+## Example Request
+
+Below is an example of generating an image using the Imagen 3 model.
+
+```json
+{
+  "model": "imagen-3",
+  "prompt": "A cozy coffee shop interior with warm lighting, wooden furniture, and plants by the window",
+  "resolution": "1024x1024",
+  "style": "photographic",
+  "count": 1
+}
+```
+
+---
+
+## Credits
+
+Imagen 3 consumes **30 credits** per image generation.

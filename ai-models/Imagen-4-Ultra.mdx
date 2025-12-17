@@ -1,0 +1,74 @@
+---
+title: Imagen 4 Ultra
+description: Imagen 4 Ultra is the premium tier of Google's Imagen 4 on Zoice, offering the absolute highest quality and most advanced image generation capabilities.
+---
+
+## Overview
+
+Imagen 4 Ultra represents the pinnacle of AI image generation technology on Zoice. It delivers uncompromising quality, exceptional detail, and the most sophisticated prompt interpretation available, making it ideal for professional and commercial applications.
+
+Use Imagen 4 Ultra when quality is paramount and you need the absolute best results possible.
+
+---
+
+## Key Capabilities
+
+- Maximum image generation quality
+- Unparalleled photorealism and fine detail
+- Advanced prompt understanding with nuanced interpretation
+- Superior composition and artistic control
+- Exceptional handling of complex scenes
+- Best-in-class text rendering and integration
+- Enhanced color accuracy and dynamic range
+
+---
+
+## Best Use Cases
+
+Use Imagen 4 Ultra for the following scenarios:
+
+- Premium commercial photography and advertising
+- High-end editorial and magazine content
+- Professional art and creative projects
+- Detailed architectural visualizations
+- Product photography requiring extreme detail
+- Any project where quality cannot be compromised
+
+---
+
+## Model Parameters
+
+The Imagen 4 Ultra model supports the following parameters:
+
+| Parameter | Type | Required | Description |
+|--------|------|----------|-------------|
+| `prompt` | string | Yes | Text description of the image you want to generate |
+| `resolution` | string | No | Output image size (default: `1024x1024`, supports up to `2048x2048`) |
+| `aspect_ratio` | string | No | Image aspect ratio (e.g., `16:9`, `1:1`, `4:3`) |
+| `count` | number | No | Number of images to generate (1-4) |
+| `seed` | number | No | Seed value for reproducible outputs |
+| `style` | string | No | Style preset (e.g., `photographic`, `artistic`, `cinematic`) |
+| `quality` | string | No | Quality setting (default: `ultra`) |
+
+---
+
+## Example Request
+
+Below is an example of generating an image using the Imagen 4 Ultra model.
+
+```json
+{
+  "model": "imagen-4-ultra",
+  "prompt": "Ultra-detailed macro photograph of a dewdrop on a rose petal at sunrise, crystal clear, professional photography, 8k resolution",
+  "resolution": "2048x2048",
+  "style": "photographic",
+  "quality": "ultra",
+  "count": 1
+}
+```
+
+---
+
+## Credits
+
+Imagen 4 Ultra consumes **75 credits** per image generation.

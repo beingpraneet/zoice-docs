@@ -1,0 +1,69 @@
+---
+title: Nano Banana Pro
+description: Nano Banana Pro is an enhanced version of Nano Banana on Zoice, offering improved quality and features while maintaining fast generation speeds.
+---
+
+## Overview
+
+Nano Banana Pro is an upgraded version of the Nano Banana model, offering enhanced image quality and additional features while maintaining the speed and efficiency that made the original popular. It strikes an excellent balance between performance and quality.
+
+Use Nano Banana Pro when you need better quality than Nano Banana but still want fast, cost-effective image generation.
+
+---
+
+## Key Capabilities
+
+- Enhanced image quality compared to Nano Banana
+- Fast generation with improved detail
+- Better prompt understanding
+- Support for more complex compositions
+- Optimized for quick iterations
+- Moderate credit consumption
+
+---
+
+## Best Use Cases
+
+Use Nano Banana Pro for the following scenarios:
+
+- Improved rapid prototyping
+- Quick content creation with better quality
+- Multiple variations with enhanced detail
+- Social media content generation
+- Draft images for client review
+- Cost-effective professional workflows
+
+---
+
+## Model Parameters
+
+The Nano Banana Pro model supports the following parameters:
+
+| Parameter | Type | Required | Description |
+|--------|------|----------|-------------|
+| `prompt` | string | Yes | Text description of the image you want to generate |
+| `resolution` | string | No | Output image size (default: `1024x1024`) |
+| `aspect_ratio` | string | No | Image aspect ratio (e.g., `16:9`, `1:1`, `4:3`) |
+| `count` | number | No | Number of images to generate (1-4) |
+| `seed` | number | No | Seed value for reproducible outputs |
+
+---
+
+## Example Request
+
+Below is an example of generating an image using the Nano Banana Pro model.
+
+```json
+{
+  "model": "nano-banana-pro",
+  "prompt": "A vibrant tropical beach scene with palm trees and turquoise water, sunny day",
+  "resolution": "1024x1024",
+  "count": 3
+}
+```
+
+---
+
+## Credits
+
+Nano Banana Pro consumes **20 credits** per image generation.
