@@ -26,7 +26,7 @@
                         "group": "Zoice Tools",
                         "pages": [
                             {
-                                "group": "AI Video",
+                                "group": "Video Generator",
                                 "pages": [
                                     "ai-video/intro",
                                     "ai-video/how-to-generate",
@@ -35,7 +35,7 @@
                                 ]
                             },
                             {
-                                "group": "AI Image",
+                                "group": "Image Generator",
                                 "pages": [
                                     "ai-image/intro",
                                     "ai-image/how-to-generate",
@@ -44,7 +44,7 @@
                                 ]
                             },
                             {
-                                "group": "AI Voice",
+                                "group": "Voice Generator",
                                 "pages": [
                                     "ai-voice/intro",
                                     "ai-voice/how-to-generate",
@@ -57,6 +57,13 @@
                                 "pages": [
                                     "ai-avatar/intro",
                                     "ai-avatar/create-avatar",
+                                    {
+                                        "group": "Custom Avatar",
+                                        "pages": [
+                                            "ai-avatar/custom-avatar/text-to-avatar",
+                                            "ai-avatar/custom-avatar/image-to-avatar"
+                                        ]
+                                    },
                                     "ai-avatar/upload-guidelines",
                                     "ai-avatar/faq"
                                 ]
