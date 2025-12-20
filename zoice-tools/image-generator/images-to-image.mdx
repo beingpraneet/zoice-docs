@@ -1,0 +1,277 @@
+---
+title: Images to Image
+description: Transform and modify existing images using AI-powered image-to-image generation.
+---
+
+## Overview
+
+Image-to-Image generation allows you to transform existing images using AI. Upload a reference image and provide instructions to modify, enhance, or completely reimagine it in a new style.
+
+## How It Works
+
+The AI analyzes your input image and applies transformations based on your text prompt while maintaining the overall composition and structure of the original image.
+
+## Quick Start
+
+<Steps>
+  <Step title="Upload Image">
+    Select and upload your reference image
+  </Step>
+  <Step title="Write Transformation Prompt">
+    Describe how you want to modify the image
+  </Step>
+  <Step title="Adjust Strength">
+    Set how much the AI should transform the image
+  </Step>
+  <Step title="Select Model">
+    Choose the appropriate AI model
+  </Step>
+  <Step title="Generate">
+    Create your transformed image
+  </Step>
+  <Step title="Download">
+    Save the result
+  </Step>
+</Steps>
+
+## Image Requirements
+
+### Technical Specifications
+- **Formats**: JPG, PNG, WebP
+- **Max Size**: 10MB
+- **Recommended Resolution**: 1024x1024 or higher
+- **Aspect Ratio**: Any, but square works best
+
+### Content Guidelines
+- Clear, well-lit images work best
+- Higher resolution inputs produce better outputs
+- Simple compositions are easier to transform
+- Avoid heavily compressed or low-quality images
+
+## Transformation Strength
+
+The strength parameter controls how much the AI modifies your image:
+
+<Tabs>
+  <Tab title="Low (0.1-0.3)">
+    **Subtle Changes**
+    - Minor adjustments
+    - Color corrections
+    - Small style tweaks
+    - Preserves most original details
+    
+    **Best For:**
+    - Photo enhancement
+    - Color grading
+    - Minor style adjustments
+  </Tab>
+  
+  <Tab title="Medium (0.4-0.6)">
+    **Moderate Changes**
+    - Noticeable transformations
+    - Style transfers
+    - Significant modifications
+    - Maintains composition
+    
+    **Best For:**
+    - Artistic style transfers
+    - Season changes
+    - Mood alterations
+  </Tab>
+  
+  <Tab title="High (0.7-1.0)">
+    **Major Changes**
+    - Dramatic transformations
+    - Complete reimagining
+    - Heavy stylization
+    - May alter composition
+    
+    **Best For:**
+    - Artistic reinterpretations
+    - Genre changes
+    - Creative experiments
+  </Tab>
+</Tabs>
+
+## Common Use Cases
+
+### Style Transfer
+Transform images into different artistic styles
+
+<CodeGroup>
+```text Watercolor
+Transform this photo into a watercolor painting with soft colors and flowing brushstrokes
+```
+
+```text Anime
+Convert this portrait into anime style with vibrant colors and clean linework
+```
+
+```text Oil Painting
+Reimagine this landscape as an oil painting in impressionist style
+```
+</CodeGroup>
+
+### Enhancement
+Improve and enhance existing images
+
+<CodeGroup>
+```text Upscale
+Enhance image quality, increase sharpness, improve details, photorealistic
+```
+
+```text Lighting
+Improve lighting, add golden hour glow, enhance colors, professional photography
+```
+
+```text Restoration
+Restore old photo, remove noise, enhance clarity, fix colors
+```
+</CodeGroup>
+
+### Modification
+Change specific elements or aspects
+
+<CodeGroup>
+```text Season Change
+Change from summer to winter, add snow, cold atmosphere, winter lighting
+```
+
+```text Time of Day
+Transform to sunset scene, golden hour lighting, warm colors, dramatic sky
+```
+
+```text Weather
+Add rain and fog, moody atmosphere, wet surfaces, dramatic weather
+```
+</CodeGroup>
+
+### Creative Transformation
+Completely reimagine the image
+
+<CodeGroup>
+```text Futuristic
+Transform into cyberpunk style, neon lights, futuristic elements, sci-fi aesthetic
+```
+
+```text Fantasy
+Convert to fantasy art, magical elements, ethereal lighting, mystical atmosphere
+```
+
+```text Minimalist
+Simplify into minimalist design, clean lines, limited colors, modern aesthetic
+```
+</CodeGroup>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Choosing the Right Strength">
+    - Start with medium strength (0.5)
+    - Increase for more dramatic changes
+    - Decrease to preserve more original details
+    - Test different values to find the sweet spot
+  </Accordion>
+  
+  <Accordion title="Writing Effective Prompts">
+    - Describe the desired transformation clearly
+    - Include style keywords
+    - Mention what to preserve from original
+    - Specify mood and atmosphere
+  </Accordion>
+  
+  <Accordion title="Image Selection">
+    - Use high-quality source images
+    - Ensure good lighting in original
+    - Simple compositions transform better
+    - Test with different images
+  </Accordion>
+</AccordionGroup>
+
+## Advanced Techniques
+
+### Iterative Refinement
+1. Start with low strength
+2. Generate and review
+3. Adjust prompt and strength
+4. Use output as new input for further refinement
+
+### Composition Preservation
+To maintain the original composition:
+- Use lower strength (0.3-0.5)
+- Focus prompt on style, not content
+- Mention "same composition" in prompt
+- Avoid adding new objects
+
+### Multiple Variations
+- Generate several versions with same settings
+- Try different strength values
+- Test various prompt phrasings
+- Compare results to find best output
+
+## Comparison: Text-to-Image vs Image-to-Image
+
+| Feature | Text-to-Image | Image-to-Image |
+|---------|---------------|----------------|
+| **Input** | Text only | Image + Text |
+| **Control** | Description-based | Structure-guided |
+| **Consistency** | Variable | More predictable |
+| **Use Case** | New creations | Transformations |
+| **Speed** | Fast | Fast |
+
+## Examples by Category
+
+<CardGroup cols={2}>
+  <Card title="Photo to Art" icon="palette">
+    Convert photographs into paintings, drawings, or artistic styles
+  </Card>
+  <Card title="Style Mixing" icon="shuffle">
+    Combine elements from different artistic movements
+  </Card>
+  <Card title="Scene Modification" icon="wand-magic-sparkles">
+    Change weather, time of day, or season
+  </Card>
+  <Card title="Enhancement" icon="sparkles">
+    Improve quality, lighting, and details
+  </Card>
+</CardGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Too much change from original">
+    - Reduce transformation strength
+    - Be more specific about preserving elements
+    - Use "same composition" in prompt
+    - Try a different model
+  </Accordion>
+  
+  <Accordion title="Not enough change">
+    - Increase transformation strength
+    - Make prompt more descriptive
+    - Use stronger style keywords
+    - Try multiple generations
+  </Accordion>
+  
+  <Accordion title="Unwanted artifacts">
+    - Use higher quality input image
+    - Adjust strength parameter
+    - Simplify the prompt
+    - Try different model
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+Keep your original images! You can always try different transformations with different prompts and strengths.
+</Tip>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Text to Image" icon="text" href="/zoice-tools/image-generator/text-to-image">
+    Create images from scratch
+  </Card>
+  <Card title="Image Models" icon="microchip" href="/ai-models/image/imagen-4/overview">
+    Explore different AI models
+  </Card>
+</CardGroup>

@@ -1,0 +1,407 @@
+---
+title: Prompt Engineering Guide
+description: Master the art of writing effective prompts for AI image, video, and voice generation.
+---
+
+## Introduction
+
+Prompt engineering is the skill of crafting effective text descriptions to guide AI models in creating the content you envision. This guide covers best practices, techniques, and examples for all types of AI generation on Zoice.
+
+## Why Prompts Matter
+
+<CardGroup cols={2}>
+  <Card title="Precision" icon="bullseye">
+    Better prompts = more accurate results
+  </Card>
+  <Card title="Efficiency" icon="bolt">
+    Save time with fewer iterations
+  </Card>
+  <Card title="Quality" icon="gem">
+    Achieve professional-grade outputs
+  </Card>
+  <Card title="Creativity" icon="palette">
+    Unlock AI's full creative potential
+  </Card>
+</CardGroup>
+
+## Universal Prompt Principles
+
+### 1. Be Specific
+❌ **Vague**: "A nice landscape"
+✅ **Specific**: "A serene mountain lake at sunset with reflection, surrounded by pine trees, golden hour lighting"
+
+### 2. Use Descriptive Language
+❌ **Generic**: "A person"
+✅ **Descriptive**: "A professional woman in her 30s with shoulder-length brown hair, wearing a navy blazer, confident smile"
+
+### 3. Include Style Keywords
+❌ **Missing Style**: "A car"
+✅ **With Style**: "A red sports car, professional automotive photography, studio lighting, high detail, 4K"
+
+### 4. Specify Quality
+❌ **No Quality Terms**: "A flower"
+✅ **With Quality**: "A vibrant red rose, macro photography, sharp focus, detailed petals, professional quality, high resolution"
+
+## Image Generation Prompts
+
+### Basic Structure
+
+```text
+[Subject] + [Action/Pose] + [Environment] + [Style] + [Lighting] + [Quality]
+```
+
+### Example Breakdown
+
+<Tabs>
+  <Tab title="Photography">
+    ```text
+    Subject: Professional headshot of a businesswoman
+    Details: Mid-30s, confident smile, navy blazer
+    Environment: Modern office background, slightly blurred
+    Style: Corporate photography
+    Lighting: Soft natural window light
+    Quality: High resolution, sharp focus, professional
+    
+    Full Prompt: "Professional headshot of a businesswoman in her 
+    mid-30s with confident smile, wearing navy blazer, modern office 
+    background slightly blurred, corporate photography style, soft 
+    natural window lighting, high resolution, sharp focus, professional"
+    ```
+  </Tab>
+  
+  <Tab title="Artistic">
+    ```text
+    Subject: Mountain landscape
+    Details: Snow-capped peaks, alpine meadow
+    Environment: Swiss Alps, summer season
+    Style: Oil painting, impressionist
+    Lighting: Golden hour, warm tones
+    Quality: Detailed brushstrokes, vibrant colors
+    
+    Full Prompt: "Mountain landscape oil painting in impressionist 
+    style, snow-capped peaks above alpine meadow, Swiss Alps in 
+    summer, golden hour lighting with warm tones, detailed visible 
+    brushstrokes, vibrant colors, artistic masterpiece"
+    ```
+  </Tab>
+  
+  <Tab title="Product">
+    ```text
+    Subject: Smartwatch
+    Details: Black metal band, round face, glowing screen
+    Environment: White marble surface
+    Style: Product photography, minimalist
+    Lighting: Soft studio lighting, subtle shadows
+    Quality: 4K, sharp detail, professional commercial
+    
+    Full Prompt: "Smartwatch product photography, black metal band 
+    with round face and glowing screen, placed on white marble 
+    surface, minimalist composition, soft studio lighting with 
+    subtle shadows, 4K quality, sharp detail, professional commercial 
+    photography"
+    ```
+  </Tab>
+</Tabs>
+
+### Power Keywords for Images
+
+<AccordionGroup>
+  <Accordion title="Quality Enhancers">
+    - High quality, high resolution, 4K, 8K
+    - Detailed, sharp focus, crisp
+    - Professional, masterpiece
+    - Ultra detailed, intricate
+  </Accordion>
+  
+  <Accordion title="Photography Styles">
+    - Professional photography
+    - Studio lighting
+    - Natural light, golden hour
+    - Bokeh, shallow depth of field
+    - Macro, wide angle, telephoto
+  </Accordion>
+  
+  <Accordion title="Artistic Styles">
+    - Oil painting, watercolor, acrylic
+    - Digital art, concept art
+    - Pencil sketch, ink drawing
+    - Anime, cartoon, comic book
+    - Photorealistic, hyperrealistic
+  </Accordion>
+  
+  <Accordion title="Mood & Atmosphere">
+    - Dramatic, cinematic, epic
+    - Peaceful, serene, calm
+    - Vibrant, colorful, bright
+    - Dark, moody, mysterious
+    - Warm, cozy, inviting
+  </Accordion>
+</AccordionGroup>
+
+## Video Generation Prompts
+
+### Video-Specific Elements
+
+```text
+[Scene] + [Action/Movement] + [Camera Work] + [Lighting] + [Style] + [Duration Context]
+```
+
+### Camera Movement Keywords
+
+<CardGroup cols={2}>
+  <Card title="Camera Angles" icon="video">
+    - Close-up, wide shot, aerial view
+    - Low angle, high angle, eye level
+    - Over-the-shoulder, POV
+  </Card>
+  
+  <Card title="Camera Movements" icon="arrows-up-down-left-right">
+    - Pan left/right, tilt up/down
+    - Dolly in/out, tracking shot
+    - Orbit, crane shot, zoom
+  </Card>
+  
+  <Card title="Motion Types" icon="person-running">
+    - Slow motion, time-lapse
+    - Smooth, handheld, steady
+    - Dynamic, static, flowing
+  </Card>
+  
+  <Card title="Transitions" icon="shuffle">
+    - Fade in/out, cut
+    - Dissolve, wipe
+    - Seamless, smooth
+  </Card>
+</CardGroup>
+
+### Video Prompt Examples
+
+<CodeGroup>
+```text Cinematic
+Aerial drone shot flying over misty mountain valley at sunrise, 
+camera moving forward and descending slowly, golden light breaking 
+through clouds, cinematic color grading, smooth camera movement, 
+epic landscape, 4K quality, professional cinematography
+```
+
+```text Product Demo
+Close-up shot of smartphone rotating on white pedestal, camera 
+orbiting smoothly around product, studio lighting with soft shadows, 
+professional commercial style, clean minimalist background, slow 
+motion rotation, high quality, detailed
+```
+
+```text Nature
+Ocean waves gently rolling onto sandy beach, camera static at 
+low angle, soft morning light, peaceful atmosphere, natural colors, 
+continuous gentle motion, serene coastal scene, high detail, 
+beautiful composition
+```
+</CodeGroup>
+
+## Voice Generation Prompts
+
+### Text Formatting for Voice
+
+<Tabs>
+  <Tab title="Punctuation">
+    **Use punctuation to control pacing:**
+    
+    ```text
+    Period (.) - Brief pause
+    Comma (,) - Short pause  
+    Question mark (?) - Rising intonation
+    Exclamation (!) - Emphasis and energy
+    Ellipsis (...) - Longer pause, trailing off
+    Em dash (—) - Dramatic pause
+    ```
+  </Tab>
+  
+  <Tab title="Emphasis">
+    **Add emphasis for important words:**
+    
+    ```text
+    This is *really* important.
+    This is VERY significant.
+    We need to focus on [pause] quality.
+    ```
+  </Tab>
+  
+  <Tab title="Pronunciation">
+    **Guide pronunciation:**
+    
+    ```text
+    The CEO [see-ee-oh] announced...
+    SQL [sequel] database...
+    GIF [jiff] or [gift]...
+    ```
+  </Tab>
+</Tabs>
+
+## Advanced Techniques
+
+### Negative Prompts
+
+Specify what you DON'T want:
+
+```text
+Positive: Beautiful sunset landscape, vibrant colors, peaceful
+Negative: People, buildings, vehicles, text, watermarks, low quality
+```
+
+### Weighted Keywords
+
+Emphasize important elements:
+
+```text
+(Professional photography:1.5), businessman in suit, 
+(sharp focus:1.3), office background, natural lighting
+```
+
+### Prompt Chaining
+
+Build complex prompts in layers:
+
+```text
+Base: A modern kitchen
++ Details: White cabinets, marble countertops, stainless appliances
++ Lighting: Bright natural light from large windows
++ Style: Interior design photography, professional
++ Quality: High resolution, sharp, detailed, 4K
+```
+
+## Common Mistakes to Avoid
+
+<AccordionGroup>
+  <Accordion title="Too Vague">
+    ❌ "A nice picture"
+    ✅ "Professional landscape photography of mountain lake at sunset"
+  </Accordion>
+  
+  <Accordion title="Contradictory Instructions">
+    ❌ "Bright sunny day with dark moody atmosphere"
+    ✅ "Bright sunny day, cheerful atmosphere" OR "Overcast day, moody atmosphere"
+  </Accordion>
+  
+  <Accordion title="Overloading">
+    ❌ "A cat and dog and bird and fish in a house with garden and pool and..."
+    ✅ "A cat and dog playing together in a sunny garden"
+  </Accordion>
+  
+  <Accordion title="Missing Style">
+    ❌ "A portrait"
+    ✅ "Professional portrait photography, studio lighting, high quality"
+  </Accordion>
+</AccordionGroup>
+
+## Prompt Templates
+
+### Template Library
+
+<Tabs>
+  <Tab title="Portrait">
+    ```text
+    [Age/gender] [ethnicity] person, [hairstyle], [clothing], 
+    [expression], [pose], [background], [lighting type], 
+    professional portrait photography, high quality, sharp focus
+    ```
+  </Tab>
+  
+  <Tab title="Landscape">
+    ```text
+    [Location/scene] during [time of day], [weather/season], 
+    [key elements], [color palette], [photography style], 
+    [composition], high detail, professional, beautiful
+    ```
+  </Tab>
+  
+  <Tab title="Product">
+    ```text
+    [Product] on [surface/background], [angle/view], [lighting], 
+    professional product photography, minimalist, clean composition, 
+    sharp focus, high quality, commercial photography
+    ```
+  </Tab>
+  
+  <Tab title="Abstract">
+    ```text
+    Abstract [theme/concept], [colors], [shapes/patterns], 
+    [style], [mood], modern art, high quality, professional, 
+    detailed, creative
+    ```
+  </Tab>
+</Tabs>
+
+## Model-Specific Tips
+
+### For Fast Models (Nano Banana)
+- Keep prompts focused and clear
+- Use straightforward descriptions
+- Emphasize key elements
+- Include quality keywords
+
+### For Premium Models (Imagen 4 Ultra)
+- Add more detail and nuance
+- Include complex lighting descriptions
+- Specify fine details
+- Use advanced style references
+
+### For Video Models (Veo)
+- Always include camera movement
+- Describe action clearly
+- Specify duration context
+- Include motion type
+
+## Practice Exercises
+
+### Exercise 1: Improve This Prompt
+```text
+Before: "A dog"
+After: "Golden Retriever dog sitting in green meadow, happy 
+expression, tongue out, sunny day, natural lighting, professional 
+pet photography, shallow depth of field, high quality"
+```
+
+### Exercise 2: Add Missing Elements
+```text
+Incomplete: "City skyline"
+Complete: "Modern city skyline at blue hour, illuminated skyscrapers 
+reflected in calm river, dramatic purple and orange sky, long 
+exposure photography, professional cityscape, high detail, 4K"
+```
+
+## Resources & Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Image Models" icon="image" href="/ai-models/image/imagen-4/overview">
+    Explore image generation models
+  </Card>
+  <Card title="Video Models" icon="video" href="/ai-models/video/veo-3-1/overview">
+    Learn about video models
+  </Card>
+  <Card title="Text to Image" icon="wand-magic-sparkles" href="/zoice-tools/image-generator/text-to-image">
+    Start generating images
+  </Card>
+  <Card title="Text to Video" icon="film" href="/zoice-tools/video-generator/text-to-video">
+    Create your first video
+  </Card>
+</CardGroup>
+
+## Tips for Success
+
+<Note>
+**Remember**: Prompt engineering is a skill that improves with practice. Don't be afraid to experiment, iterate, and learn from your results!
+</Note>
+
+### Quick Checklist
+- ✅ Specific subject description
+- ✅ Style keywords included
+- ✅ Lighting/atmosphere described
+- ✅ Quality terms added
+- ✅ Clear and focused
+- ✅ No contradictions
+- ✅ Appropriate length
+
+<Tip>
+Save your successful prompts! Build a personal library of prompts that work well for different use cases.
+</Tip>

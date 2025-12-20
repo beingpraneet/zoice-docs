@@ -1,0 +1,304 @@
+---
+title: Image Ref to Video
+description: Generate videos using reference images to guide the visual style and composition.
+---
+
+## Overview
+
+Image Reference to Video allows you to create videos that match the style, composition, or subject of a reference image. Upload an image and describe the motion or action you want, and the AI will generate a video that maintains visual consistency with your reference.
+
+## How It Works
+
+The AI analyzes your reference image to understand composition, style, colors, and subject matter, then generates a video that incorporates these elements while adding the motion and action described in your prompt.
+
+## Quick Start
+
+<Steps>
+  <Step title="Upload Reference Image">
+    Select an image to guide the video generation
+  </Step>
+  <Step title="Write Motion Prompt">
+    Describe the action and movement you want
+  </Step>
+  <Step title="Set Influence Strength">
+    Control how closely the video follows the image
+  </Step>
+  <Step title="Configure Settings">
+    Set duration, resolution, and model
+  </Step>
+  <Step title="Generate">
+    Create your video
+  </Step>
+  <Step title="Download">
+    Save the result
+  </Step>
+</Steps>
+
+## Image Requirements
+
+### Technical Specifications
+- **Formats**: JPG, PNG, WebP
+- **Max Size**: 10MB
+- **Recommended Resolution**: 1024x1024 or higher
+- **Aspect Ratio**: Match your desired video aspect ratio
+
+### Content Guidelines
+- Clear, well-composed images work best
+- Good lighting and focus
+- Relevant to the video you want to create
+- High quality produces better results
+
+## Reference Influence Strength
+
+Control how much the video follows the reference image:
+
+<Tabs>
+  <Tab title="Low (0.2-0.4)">
+    **Loose Inspiration**
+    - General style guidance
+    - Color palette reference
+    - Mood and atmosphere
+    - More creative freedom
+    
+    **Best For:**
+    - Style inspiration
+    - Color scheme reference
+    - General aesthetic guidance
+  </Tab>
+  
+  <Tab title="Medium (0.5-0.7)">
+    **Balanced Guidance**
+    - Maintains composition
+    - Follows style closely
+    - Preserves key elements
+    - Balanced creativity
+    
+    **Best For:**
+    - Character consistency
+    - Scene recreation
+    - Product videos
+  </Tab>
+  
+  <Tab title="High (0.8-1.0)">
+    **Strong Adherence**
+    - Very close to reference
+    - Minimal deviation
+    - Strict composition
+    - Limited creative variation
+    
+    **Best For:**
+    - Animating static images
+    - Precise style matching
+    - Brand consistency
+  </Tab>
+</Tabs>
+
+## Use Cases
+
+### Animate Static Images
+Bring photos and artwork to life
+
+<CodeGroup>
+```text Portrait Animation
+Camera slowly zooming in, subject's hair gently moving 
+in breeze, subtle facial movements, natural lighting
+```
+
+```text Landscape Animation
+Clouds slowly drifting across sky, trees swaying gently, 
+water flowing, camera panning right, peaceful atmosphere
+```
+
+```text Product Animation
+Product rotating slowly, studio lighting, camera orbiting, 
+professional commercial style, clean background
+```
+</CodeGroup>
+
+### Style-Matched Videos
+Create videos matching a specific visual style
+
+<CodeGroup>
+```text Art Style Match
+Maintain this watercolor art style, gentle flowing motion, 
+soft colors, artistic animation, dreamy atmosphere
+```
+
+```text Brand Consistency
+Match this brand aesthetic, smooth camera movement, 
+professional commercial style, consistent color palette
+```
+</CodeGroup>
+
+### Scene Recreation
+Recreate scenes with motion
+
+<CodeGroup>
+```text Scene with Action
+Same composition and lighting, add walking people, 
+moving cars, dynamic city life, maintain atmosphere
+```
+
+```text Environment Animation
+Keep this environment, add weather effects, moving clouds, 
+swaying vegetation, dynamic natural elements
+```
+</CodeGroup>
+
+## Writing Effective Prompts
+
+### Prompt Structure
+
+When using reference images, your prompt should focus on:
+
+1. **Motion/Action**: What should move and how
+2. **Camera Work**: How the camera should move
+3. **Preservation**: What to keep from the reference
+4. **Additions**: New elements to add
+
+### Example Prompts
+
+<CodeGroup>
+```text Subtle Animation
+Gentle camera push in, subject's clothing moving slightly 
+in wind, hair flowing softly, maintain exact composition 
+and lighting from reference image
+```
+
+```text Dynamic Action
+Camera orbiting around subject, dramatic movement, 
+cinematic style, maintain color palette and mood from 
+reference, add motion blur for speed
+```
+
+```text Environmental Motion
+Static camera, clouds moving across sky, water rippling, 
+trees swaying, keep exact composition and framing from 
+reference image, natural movement
+```
+</CodeGroup>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Image Selection">
+    - Use high-quality reference images
+    - Match aspect ratio to desired video
+    - Choose images with clear subjects
+    - Ensure good lighting and composition
+  </Accordion>
+  
+  <Accordion title="Prompt Writing">
+    - Describe motion clearly
+    - Specify what to preserve from reference
+    - Include camera movement details
+    - Mention style consistency
+  </Accordion>
+  
+  <Accordion title="Strength Adjustment">
+    - Start with medium strength (0.6)
+    - Increase for closer matching
+    - Decrease for more creative freedom
+    - Test different values
+  </Accordion>
+</AccordionGroup>
+
+## Common Scenarios
+
+<CardGroup cols={2}>
+  <Card title="Photo to Video" icon="image">
+    Animate photographs with subtle motion
+  </Card>
+  <Card title="Concept Art" icon="palette">
+    Bring concept art and illustrations to life
+  </Card>
+  <Card title="Product Showcase" icon="box">
+    Create product videos from product photos
+  </Card>
+  <Card title="Style Transfer" icon="wand-magic-sparkles">
+    Generate videos in specific artistic styles
+  </Card>
+</CardGroup>
+
+## Advanced Techniques
+
+### Layered Motion
+Describe different motion for different elements:
+
+```text
+Foreground: person walking slowly from left to right
+Midground: cars passing by with motion blur
+Background: clouds drifting, maintain reference composition
+Camera: slight pan following main subject
+```
+
+### Temporal Consistency
+For character or product consistency across multiple videos:
+
+1. Use same reference image
+2. Keep similar strength settings
+3. Maintain consistent prompt structure
+4. Use same model for all generations
+
+### Hybrid Approach
+Combine reference image with detailed text descriptions:
+
+```text
+Using reference image for character appearance and style,
+add dynamic action: character jumping and spinning,
+camera slow motion, dramatic lighting, cinematic style,
+maintain character design from reference
+```
+
+## Comparison: Text-Only vs Image Reference
+
+| Aspect | Text-to-Video | Image Ref to Video |
+|--------|---------------|-------------------|
+| **Control** | Description-based | Visual-guided |
+| **Consistency** | Variable | More predictable |
+| **Creativity** | High freedom | Guided creativity |
+| **Use Case** | New concepts | Style matching |
+| **Setup** | Faster | Requires image |
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Video doesn't match reference">
+    - Increase reference strength
+    - Simplify motion prompt
+    - Use higher quality reference image
+    - Mention "maintain reference style" in prompt
+  </Accordion>
+  
+  <Accordion title="Too similar to static image">
+    - Decrease reference strength
+    - Add more dynamic motion descriptions
+    - Increase motion intensity setting
+    - Use more active verbs in prompt
+  </Accordion>
+  
+  <Accordion title="Inconsistent style">
+    - Increase reference strength
+    - Use clearer reference image
+    - Simplify the prompt
+    - Try different model
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+For best results, use reference images that clearly show the style, composition, or subject you want in your video.
+</Tip>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Text to Video" icon="text" href="/zoice-tools/video-generator/text-to-video">
+    Create videos without reference images
+  </Card>
+  <Card title="Images to Video" icon="images" href="/zoice-tools/video-generator/images-to-video">
+    Create videos from multiple images
+  </Card>
+  <Card title="Video Models" icon="microchip" href="/ai-models/video/veo-3-1/overview">
+    Explore different AI models
+  </Card>
+</CardGroup>

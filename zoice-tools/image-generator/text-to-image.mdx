@@ -1,0 +1,226 @@
+---
+title: Text to Image
+description: Generate images from text prompts using Zoice's AI image generation models.
+---
+
+## Overview
+
+Text-to-Image generation is the core feature of Zoice's image creation tools. Simply describe what you want to see, and our AI models will create a unique image matching your description.
+
+## Quick Start
+
+<Steps>
+  <Step title="Navigate to Image Generator">
+    Go to the Image Generator tool in your Zoice dashboard
+  </Step>
+  <Step title="Write Your Prompt">
+    Enter a detailed description of the image you want to create
+  </Step>
+  <Step title="Select Model">
+    Choose an AI model (Imagen 4, Nano Banana, etc.)
+  </Step>
+  <Step title="Configure Settings">
+    Set resolution, aspect ratio, and other parameters
+  </Step>
+  <Step title="Generate">
+    Click generate and wait for your image
+  </Step>
+  <Step title="Download">
+    Save your generated image
+  </Step>
+</Steps>
+
+## Writing Effective Prompts
+
+### Prompt Structure
+
+A well-structured prompt typically includes:
+
+1. **Subject**: What is the main focus?
+2. **Style**: What artistic style or aesthetic?
+3. **Details**: Colors, lighting, composition
+4. **Quality**: Resolution, detail level descriptors
+
+### Example Prompts
+
+<CodeGroup>
+```text Simple
+A red sports car on a mountain road at sunset
+```
+
+```text Detailed
+A sleek red Ferrari driving on a winding mountain road during golden hour, dramatic clouds in the sky, cinematic lighting, photorealistic, 4K quality
+```
+
+```text Artistic
+An abstract watercolor painting of a city skyline, vibrant blues and purples, flowing brushstrokes, modern art style, high contrast
+```
+
+```text Product
+A minimalist product photo of a smartwatch on a white marble surface, soft studio lighting, professional photography, clean composition, sharp focus
+```
+</CodeGroup>
+
+## Generation Parameters
+
+### Resolution Options
+- **Standard**: 1024x1024 (fastest)
+- **High**: 1536x1536 (balanced)
+- **Ultra**: 2048x2048 (highest quality)
+
+### Aspect Ratios
+- **Square**: 1:1 (social media, profile pictures)
+- **Portrait**: 3:4 or 9:16 (vertical content)
+- **Landscape**: 16:9 or 4:3 (horizontal content)
+- **Wide**: 21:9 (cinematic)
+
+### Advanced Settings
+
+<AccordionGroup>
+  <Accordion title="Guidance Scale">
+    Controls how closely the AI follows your prompt
+    - **Low (1-5)**: More creative, less literal
+    - **Medium (6-10)**: Balanced interpretation
+    - **High (11-15)**: Strict adherence to prompt
+  </Accordion>
+  
+  <Accordion title="Seed">
+    Use a specific seed number for reproducible results
+    - Leave blank for random generation
+    - Use same seed to recreate similar images
+    - Useful for iterating on a concept
+  </Accordion>
+  
+  <Accordion title="Number of Images">
+    Generate multiple variations
+    - 1-4 images per generation
+    - Each variation is unique
+    - Helps find the best result
+  </Accordion>
+</AccordionGroup>
+
+## Best Practices
+
+### Do's ✅
+- Be specific about what you want
+- Include style and mood descriptors
+- Mention lighting and composition
+- Use quality keywords (4K, detailed, sharp)
+- Specify colors and materials
+- Reference art styles or artists
+
+### Don'ts ❌
+- Don't use vague descriptions
+- Avoid contradictory instructions
+- Don't overload with too many concepts
+- Avoid extremely complex scenes initially
+- Don't expect perfect text rendering in images
+
+## Prompt Tips by Category
+
+<Tabs>
+  <Tab title="Photography">
+    **Key Elements:**
+    - Camera type and lens
+    - Lighting conditions
+    - Composition style
+    - Depth of field
+    
+    **Example:**
+    "Professional portrait photo, 85mm lens, soft natural lighting, shallow depth of field, bokeh background"
+  </Tab>
+  
+  <Tab title="Art Styles">
+    **Popular Styles:**
+    - Oil painting
+    - Watercolor
+    - Digital art
+    - Anime/Manga
+    - Sketch/Line art
+    
+    **Example:**
+    "Oil painting in the style of impressionism, visible brushstrokes, vibrant colors, outdoor scene"
+  </Tab>
+  
+  <Tab title="3D Renders">
+    **Key Elements:**
+    - Rendering engine
+    - Material properties
+    - Lighting setup
+    - Level of detail
+    
+    **Example:**
+    "3D render, Octane render, metallic materials, studio lighting, highly detailed, 8K resolution"
+  </Tab>
+  
+  <Tab title="Concepts">
+    **Key Elements:**
+    - Mood and atmosphere
+    - Color palette
+    - Abstract elements
+    - Symbolic meaning
+    
+    **Example:**
+    "Abstract concept of innovation, flowing energy, blue and gold colors, futuristic, dynamic composition"
+  </Tab>
+</Tabs>
+
+## Common Use Cases
+
+<CardGroup cols={2}>
+  <Card title="Marketing Assets" icon="bullhorn">
+    Create social media graphics, ad visuals, and promotional images
+  </Card>
+  <Card title="Product Mockups" icon="box">
+    Generate product concepts and visualization
+  </Card>
+  <Card title="Blog Headers" icon="newspaper">
+    Create custom header images for articles
+  </Card>
+  <Card title="Concept Art" icon="palette">
+    Develop visual concepts for projects
+  </Card>
+</CardGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Image doesn't match prompt">
+    - Make your prompt more specific
+    - Increase guidance scale
+    - Try a different model
+    - Regenerate with variations
+  </Accordion>
+  
+  <Accordion title="Low quality results">
+    - Increase resolution setting
+    - Add quality keywords to prompt
+    - Use a higher-tier model
+    - Specify "detailed" or "sharp focus"
+  </Accordion>
+  
+  <Accordion title="Unexpected elements">
+    - Simplify your prompt
+    - Remove contradictory descriptions
+    - Be more explicit about what to exclude
+    - Try negative prompts if available
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+Save prompts that work well! Build a library of effective prompts for different use cases.
+</Tip>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Image to Image" icon="images" href="/zoice-tools/image-generator/images-to-image">
+    Transform existing images
+  </Card>
+  <Card title="Explore Models" icon="microchip" href="/ai-models/image/imagen-4/overview">
+    Learn about different AI models
+  </Card>
+  <Card title="Prompt Guide" icon="book" href="/prompt-guide/introduction">
+    Master prompt engineering
+  </Card>
+</CardGroup>

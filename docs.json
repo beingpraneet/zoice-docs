@@ -18,80 +18,61 @@
                         "pages": [
                             "index",
                             "login",
-                            "signup",
-                            "features-overview"
+                            "signup"
+                        ]
+                    },
+                    {
+                        "group": "Features",
+                        "pages": [
+                            "features/image-generator",
+                            "features/video-generator",
+                            "features/voice-generator",
+                            "features/voice-cloning",
+                            {
+                                "group": "AI Avatar",
+                                "pages": [
+                                    "features/ai-avatar/image-to-avatar",
+                                    "features/ai-avatar/text-to-avatar"
+                                ]
+                            }
                         ]
                     },
                     {
                         "group": "Zoice Tools",
                         "pages": [
                             {
-                                "group": "Video Generator",
+                                "group": "Image Generator",
                                 "pages": [
-                                    "ai-video/intro",
-                                    "ai-video/how-to-generate",
-                                    "ai-video/prompts",
-                                    "ai-video/faq"
+                                    "zoice-tools/image-generator/text-to-image",
+                                    "zoice-tools/image-generator/images-to-image"
                                 ]
                             },
                             {
-                                "group": "Image Generator",
+                                "group": "Video Generator",
                                 "pages": [
-                                    "ai-image/intro",
-                                    "ai-image/how-to-generate",
-                                    "ai-image/prompts",
-                                    "ai-image/faq"
+                                    "zoice-tools/video-generator/text-to-video",
+                                    "zoice-tools/video-generator/image-ref-to-video",
+                                    "zoice-tools/video-generator/images-to-video",
+                                    "zoice-tools/video-generator/frame-to-video"
                                 ]
                             },
                             {
                                 "group": "Voice Generator",
                                 "pages": [
-                                    "ai-voice/intro",
-                                    "ai-voice/how-to-generate",
-                                    "ai-voice/best-practices",
-                                    "ai-voice/faq"
+                                    "zoice-tools/voice-generator/text-to-voice"
                                 ]
                             },
                             {
-                                "group": "AI Avatar",
+                                "group": "Transcribe",
                                 "pages": [
-                                    "ai-avatar/intro",
-                                    "ai-avatar/create-avatar",
-                                    {
-                                        "group": "Custom Avatar",
-                                        "pages": [
-                                            "ai-avatar/custom-avatar/text-to-avatar",
-                                            "ai-avatar/custom-avatar/image-to-avatar"
-                                        ]
-                                    },
-                                    "ai-avatar/upload-guidelines",
-                                    "ai-avatar/faq"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "group": "AI Models",
-                        "pages": [
-                            {
-                                "group": "Image Models",
-                                "pages": [
-                                    "ai-models/Imagen-4",
-                                    "ai-models/Imagen-4-Fast",
-                                    "ai-models/Imagen-4-Ultra",
-                                    "ai-models/Imagen-3",
-                                    "ai-models/Nano-Banana",
-                                    "ai-models/Nano-Banana-Pro"
+                                    "zoice-tools/transcribe/video-to-text"
                                 ]
                             },
                             {
-                                "group": "Video Models",
+                                "group": "AI Avatar Generator",
                                 "pages": [
-                                    "ai-models/Veo-3.1",
-                                    "ai-models/Veo-3.1-Fast",
-                                    "ai-models/Veo-3.0",
-                                    "ai-models/Veo-3.0-Fast",
-                                    "ai-models/Veo-2"
+                                    "zoice-tools/ai-avatar-generator/image-to-avatar",
+                                    "zoice-tools/ai-avatar-generator/text-to-avatar"
                                 ]
                             }
                         ]
@@ -109,6 +90,116 @@
                         "pages": [
                             "legal/terms",
                             "legal/privacy"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "AI Models",
+                "groups": [
+                    {
+                        "group": "Image Models",
+                        "pages": [
+                            {
+                                "group": "Nano Banana",
+                                "pages": [
+                                    "ai-models/image/nano-banana/overview",
+                                    "ai-models/image/nano-banana/text-prompt",
+                                    "ai-models/image/nano-banana/ref-image"
+                                ]
+                            },
+                            {
+                                "group": "Imagen 4",
+                                "pages": [
+                                    "ai-models/image/imagen-4/overview",
+                                    "ai-models/image/imagen-4/text-prompt"
+                                ]
+                            },
+                            {
+                                "group": "Imagen 4 Ultra",
+                                "pages": [
+                                    "ai-models/image/imagen-4-ultra/overview",
+                                    "ai-models/image/imagen-4-ultra/text-prompt"
+                                ]
+                            },
+                            {
+                                "group": "Imagen 4 Fast",
+                                "pages": [
+                                    "ai-models/image/imagen-4-fast/overview",
+                                    "ai-models/image/imagen-4-fast/text-prompt"
+                                ]
+                            },
+                            {
+                                "group": "Imagen 3",
+                                "pages": [
+                                    "ai-models/image/imagen-3/overview",
+                                    "ai-models/image/imagen-3/text-prompt"
+                                ]
+                            },
+                            {
+                                "group": "Nano Banana Pro",
+                                "pages": [
+                                    "ai-models/image/nano-banana-pro/overview",
+                                    "ai-models/image/nano-banana-pro/text-prompt",
+                                    "ai-models/image/nano-banana-pro/ref-image"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "group": "Video Models",
+                        "pages": [
+                            {
+                                "group": "Veo 2",
+                                "pages": [
+                                    "ai-models/video/veo-2/overview",
+                                    "ai-models/video/veo-2/text-prompt",
+                                    "ai-models/video/veo-2/ref-image"
+                                ]
+                            },
+                            {
+                                "group": "Veo 3.1",
+                                "pages": [
+                                    "ai-models/video/veo-3-1/overview",
+                                    "ai-models/video/veo-3-1/text-prompt",
+                                    "ai-models/video/veo-3-1/ref-image"
+                                ]
+                            },
+                            {
+                                "group": "Veo 3.0",
+                                "pages": [
+                                    "ai-models/video/veo-3-0/overview",
+                                    "ai-models/video/veo-3-0/text-prompt",
+                                    "ai-models/video/veo-3-0/ref-image"
+                                ]
+                            },
+                            {
+                                "group": "Veo 3.1 Fast",
+                                "pages": [
+                                    "ai-models/video/veo-3-1-fast/overview",
+                                    "ai-models/video/veo-3-1-fast/text-prompt",
+                                    "ai-models/video/veo-3-1-fast/ref-image"
+                                ]
+                            },
+                            {
+                                "group": "Veo 3.0 Fast",
+                                "pages": [
+                                    "ai-models/video/veo-3-0-fast/overview",
+                                    "ai-models/video/veo-3-0-fast/text-prompt",
+                                    "ai-models/video/veo-3-0-fast/ref-image"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Prompt Guide",
+                "groups": [
+                    {
+                        "group": "Prompt Guide",
+                        "pages": [
+                            "prompt-guide/introduction"
                         ]
                     }
                 ]
