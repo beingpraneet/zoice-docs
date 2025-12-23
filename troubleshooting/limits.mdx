@@ -1,0 +1,364 @@
+---
+title: Usage Limits & Quotas
+description: Understand Zoice's usage limits, rate limits, and how to optimize your generation workflow.
+---
+
+## Overview
+
+Zoice implements usage limits to ensure fair access and optimal performance for all users. This guide explains the limits, how they work, and how to work within them effectively.
+
+## Credit Limits
+
+### Account Credit Limits
+- **Free Trial**: 50 credits (one-time)
+- **Pay-As-You-Go**: No limit (purchase as needed)
+- **Starter Plan**: 500 credits/month + rollover
+- **Professional Plan**: 2,000 credits/month + rollover
+- **Business Plan**: 7,500 credits/month + rollover
+- **Enterprise**: Custom limits
+
+### Credit Rollover
+- **Subscription Plans**: Unused credits roll over to next month
+- **Maximum Rollover**: Up to 2x monthly allocation
+- **Example**: Starter plan can accumulate up to 1,000 credits
+- **Purchased Credits**: Never expire, no rollover limit
+
+## Rate Limits
+
+### Generation Rate Limits
+
+<Tabs>
+  <Tab title="Free Tier">
+    - **Images**: 10 per hour, 50 per day
+    - **Videos**: 5 per hour, 20 per day
+    - **Voice**: 20 per hour, 100 per day
+    - **Concurrent**: 1 generation at a time
+  </Tab>
+  
+  <Tab title="Starter Plan">
+    - **Images**: 50 per hour, 500 per day
+    - **Videos**: 20 per hour, 100 per day
+    - **Voice**: 100 per hour, 1000 per day
+    - **Concurrent**: 3 generations at a time
+  </Tab>
+  
+  <Tab title="Professional Plan">
+    - **Images**: 200 per hour, 2000 per day
+    - **Videos**: 50 per hour, 500 per day
+    - **Voice**: 500 per hour, 5000 per day
+    - **Concurrent**: 10 generations at a time
+  </Tab>
+  
+  <Tab title="Business Plan">
+    - **Images**: 1000 per hour, 10000 per day
+    - **Videos**: 200 per hour, 2000 per day
+    - **Voice**: 2000 per hour, 20000 per day
+    - **Concurrent**: 25 generations at a time
+  </Tab>
+  
+  <Tab title="Enterprise">
+    - **Custom Limits**: Negotiated based on needs
+    - **Dedicated Resources**: Isolated infrastructure
+    - **No Rate Limits**: Optional for high-volume users
+  </Tab>
+</Tabs>
+
+### API Rate Limits
+- **Free**: 100 requests/hour
+- **Starter**: 500 requests/hour
+- **Professional**: 2,000 requests/hour
+- **Business**: 10,000 requests/hour
+- **Enterprise**: Custom
+
+## File Size Limits
+
+### Upload Limits
+
+| File Type | Maximum Size | Recommended |
+|-----------|-------------|-------------|
+| **Images** (Reference) | 10 MB | 5 MB or less |
+| **Videos** (Transcription) | 2 GB | 500 MB or less |
+| **Audio** (Voice Clone) | 50 MB | 10 MB or less |
+| **Documents** | 25 MB | 10 MB or less |
+
+### Output Limits
+
+| Content Type | Maximum | Notes |
+|--------------|---------|-------|
+| **Image Resolution** | 8192x8192px | Model dependent |
+| **Video Duration** | 10 seconds | Per generation |
+| **Video Resolution** | 1080p | 4K for Enterprise |
+| **Audio Duration** | 10 minutes | Per generation |
+| **Text Length** | 5,000 characters | Per voice generation |
+
+## Model-Specific Limits
+
+### Image Models
+
+<AccordionGroup>
+  <Accordion title="Nano Banana">
+    - **Max Resolution**: 2048x2048px
+    - **Batch Size**: Up to 4 images
+    - **Queue Priority**: Standard
+    - **Timeout**: 30 seconds
+  </Accordion>
+  
+  <Accordion title="Imagen 4">
+    - **Max Resolution**: 4096x4096px
+    - **Batch Size**: Up to 4 images
+    - **Queue Priority**: Standard
+    - **Timeout**: 60 seconds
+  </Accordion>
+  
+  <Accordion title="Imagen 4 Ultra">
+    - **Max Resolution**: 8192x8192px
+    - **Batch Size**: Up to 2 images
+    - **Queue Priority**: High (Pro+)
+    - **Timeout**: 120 seconds
+  </Accordion>
+</AccordionGroup>
+
+### Video Models
+
+<AccordionGroup>
+  <Accordion title="Veo 3.1">
+    - **Max Duration**: 10 seconds
+    - **Max Resolution**: 1080p
+    - **Frame Rate**: 24/30 fps
+    - **Timeout**: 5 minutes
+  </Accordion>
+  
+  <Accordion title="Veo 3.1 Fast">
+    - **Max Duration**: 8 seconds
+    - **Max Resolution**: 1080p
+    - **Frame Rate**: 24/30 fps
+    - **Timeout**: 3 minutes
+  </Accordion>
+</AccordionGroup>
+
+## Storage Limits
+
+### Generated Content Storage
+- **Free**: 1 GB, 30 days retention
+- **Starter**: 10 GB, 90 days retention
+- **Professional**: 100 GB, 1 year retention
+- **Business**: 1 TB, unlimited retention
+- **Enterprise**: Custom storage
+
+### Download Limits
+- **Bandwidth**: Unlimited
+- **Concurrent Downloads**: 5 per user
+- **Download Speed**: Based on your connection
+- **Archive Downloads**: Available for 7 days
+
+## Queue Priority
+
+### Priority Levels
+
+<Tabs>
+  <Tab title="Standard">
+    **Free & Starter Plans**
+    - Normal queue position
+    - Average wait: 0-30 seconds
+    - Best effort processing
+    - Subject to peak hour delays
+  </Tab>
+  
+  <Tab title="Priority">
+    **Professional Plan**
+    - Higher queue position
+    - Average wait: 0-10 seconds
+    - Faster processing
+    - Minimal peak hour impact
+  </Tab>
+  
+  <Tab title="Premium">
+    **Business Plan**
+    - Highest queue position
+    - Average wait: 0-5 seconds
+    - Fastest processing
+    - Dedicated resources
+  </Tab>
+  
+  <Tab title="Dedicated">
+    **Enterprise Plan**
+    - Isolated infrastructure
+    - No queue wait
+    - Guaranteed processing time
+    - SLA-backed performance
+  </Tab>
+</Tabs>
+
+## Optimization Tips
+
+### Maximize Your Limits
+
+<CardGroup cols={2}>
+  <Card title="Batch Generations" icon="layer-group">
+    Generate multiple variations at once to save time
+  </Card>
+  
+  <Card title="Use Fast Models" icon="bolt">
+    Choose Fast variants for quick iterations
+  </Card>
+  
+  <Card title="Optimize Resolution" icon="compress">
+    Use appropriate resolution for your needs
+  </Card>
+  
+  <Card title="Schedule Wisely" icon="clock">
+    Generate during off-peak hours for faster processing
+  </Card>
+</CardGroup>
+
+### Avoid Hitting Limits
+
+<AccordionGroup>
+  <Accordion title="Monitor Usage">
+    - Check credit balance regularly
+    - Review usage dashboard
+    - Set up low-balance alerts
+    - Track generation patterns
+  </Accordion>
+  
+  <Accordion title="Plan Ahead">
+    - Purchase credits before running out
+    - Upgrade plan if consistently hitting limits
+    - Schedule large batches appropriately
+    - Use API for automation
+  </Accordion>
+  
+  <Accordion title="Optimize Workflow">
+    - Test with lower-cost models first
+    - Use appropriate resolution
+    - Batch similar generations
+    - Cache and reuse results
+  </Accordion>
+</AccordionGroup>
+
+## What Happens When You Hit a Limit?
+
+### Rate Limit Exceeded
+**Response:**
+- Generation request queued or rejected
+- Error message displayed
+- Retry-after time provided
+
+**Solutions:**
+- Wait for limit reset (hourly/daily)
+- Upgrade to higher plan
+- Spread generations over time
+- Use API with backoff strategy
+
+### Credit Limit Exceeded
+**Response:**
+- Generation blocked
+- Purchase prompt displayed
+- Current work saved
+
+**Solutions:**
+- Purchase additional credits
+- Upgrade subscription plan
+- Wait for monthly renewal (subscriptions)
+
+### Storage Limit Exceeded
+**Response:**
+- Cannot save new generations
+- Warning message displayed
+- Oldest files marked for deletion
+
+**Solutions:**
+- Download and delete old files
+- Upgrade storage plan
+- Enable auto-cleanup
+- Archive important files locally
+
+## Fair Use Policy
+
+### Acceptable Use
+- Personal and commercial projects
+- Content creation and marketing
+- Research and development
+- Educational purposes
+- API integration for applications
+
+### Prohibited Use
+- Reselling generated content as-is
+- Automated scraping or abuse
+- Generating illegal content
+- Circumventing rate limits
+- Sharing account credentials
+
+### Enforcement
+- Automated monitoring
+- Manual review for violations
+- Warning for first offense
+- Account suspension for repeated violations
+- Permanent ban for severe violations
+
+## Enterprise Custom Limits
+
+### Available Customizations
+- **Credit Allocation**: Custom monthly credits
+- **Rate Limits**: Adjusted to your needs
+- **Storage**: Unlimited or custom TB
+- **Concurrent Generations**: Up to 100+
+- **API Limits**: Custom requests/hour
+- **Queue Priority**: Dedicated infrastructure
+
+### Contact Sales
+Email sales@zoice.com to discuss:
+- Your usage requirements
+- Expected volume
+- Performance needs
+- Custom SLA requirements
+
+## Monitoring Your Usage
+
+### Dashboard Metrics
+- **Credit Balance**: Current credits available
+- **Usage Today**: Credits used today
+- **Usage This Month**: Monthly consumption
+- **Rate Limit Status**: Current limits and resets
+- **Storage Used**: Files and total size
+
+### Usage Reports
+- Export detailed usage data
+- Filter by date range, model, project
+- Analyze spending patterns
+- Forecast future needs
+
+## Getting Help
+
+<CardGroup cols={2}>
+  <Card title="Upgrade Plan" icon="arrow-up">
+    Increase your limits with a higher plan
+  </Card>
+  
+  <Card title="Contact Support" icon="headset">
+    Email support@zoice.com for limit increases
+  </Card>
+  
+  <Card title="Billing Help" icon="dollar-sign" href="/troubleshooting/billing">
+    Manage credits and payments
+  </Card>
+  
+  <Card title="Common Errors" icon="circle-exclamation" href="/troubleshooting/common-errors">
+    Troubleshoot limit-related errors
+  </Card>
+</CardGroup>
+
+<Tip>
+Monitor your usage patterns for a month, then choose the plan that gives you 20-30% headroom above your typical usage.
+</Tip>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="View Pricing" href="/troubleshooting/billing">
+    Compare plans and pricing
+  </Card>
+  <Card title="Optimize Usage" href="/prompt-guide/introduction">
+    Learn to generate efficiently
+  </Card>
+</CardGroup>

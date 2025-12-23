@@ -1,0 +1,352 @@
+---
+title: Billing & Payments
+description: Understand Zoice's billing system, manage your subscription, and resolve payment issues.
+---
+
+## Overview
+
+Zoice uses a credit-based system for AI generation. This guide covers pricing, billing cycles, payment methods, and how to manage your account.
+
+## Credit System
+
+### How Credits Work
+
+<CardGroup cols={2}>
+  <Card title="Purchase Credits" icon="shopping-cart">
+    Buy credit packages or subscribe for monthly credits
+  </Card>
+  
+  <Card title="Use for Generation" icon="wand-magic-sparkles">
+    Each generation consumes credits based on model and settings
+  </Card>
+  
+  <Card title="Track Usage" icon="chart-line">
+    Monitor credit balance and usage in your dashboard
+  </Card>
+  
+  <Card title="Never Expire" icon="infinity">
+    Purchased credits never expire
+  </Card>
+</CardGroup>
+
+### Credit Costs by Model
+
+#### Image Generation
+| Model | Resolution | Credits per Image |
+|-------|------------|-------------------|
+| Nano Banana | Up to 2048px | 1 credit |
+| Nano Banana Pro | Up to 2048px | 2 credits |
+| Imagen 3 | Up to 4096px | 2 credits |
+| Imagen 4 | Up to 4096px | 3 credits |
+| Imagen 4 Fast | Up to 4096px | 2 credits |
+| Imagen 4 Ultra | Up to 8192px | 5 credits |
+
+#### Video Generation
+| Model | Duration | Credits per Video |
+|-------|----------|-------------------|
+| Veo 2 | Per second | 2 credits/sec |
+| Veo 3.0 | Per second | 3 credits/sec |
+| Veo 3.0 Fast | Per second | 2 credits/sec |
+| Veo 3.1 | Per second | 4 credits/sec |
+| Veo 3.1 Fast | Per second | 3 credits/sec |
+
+#### Voice & Avatar
+| Feature | Credits |
+|---------|---------|
+| Text-to-Voice | 1 credit per 1000 characters |
+| Voice Cloning | 10 credits (one-time setup) |
+| AI Avatar (Image) | 5 credits + voice credits |
+| AI Avatar (Text) | 8 credits + voice credits |
+| Video Transcription | 1 credit per minute |
+
+## Pricing Plans
+
+### Pay-As-You-Go
+- **No monthly fee**
+- Purchase credit packages as needed
+- Credits never expire
+- Best for occasional users
+
+**Credit Packages:**
+- 100 credits - $10 ($0.10/credit)
+- 500 credits - $40 ($0.08/credit) - Save 20%
+- 1,000 credits - $70 ($0.07/credit) - Save 30%
+- 5,000 credits - $300 ($0.06/credit) - Save 40%
+
+### Monthly Subscriptions
+
+<Tabs>
+  <Tab title="Starter">
+    **$29/month**
+    - 500 credits/month
+    - Rollover unused credits
+    - Priority support
+    - Early access to new models
+    
+    Best for: Regular users, small projects
+  </Tab>
+  
+  <Tab title="Professional">
+    **$99/month**
+    - 2,000 credits/month
+    - Rollover unused credits
+    - Priority generation queue
+    - Dedicated support
+    - API access
+    - Team collaboration (up to 3 users)
+    
+    Best for: Professionals, content creators
+  </Tab>
+  
+  <Tab title="Business">
+    **$299/month**
+    - 7,500 credits/month
+    - Rollover unused credits
+    - Highest priority queue
+    - 24/7 dedicated support
+    - Full API access
+    - Team collaboration (up to 10 users)
+    - Custom models training
+    - SLA guarantee
+    
+    Best for: Businesses, agencies
+  </Tab>
+  
+  <Tab title="Enterprise">
+    **Custom Pricing**
+    - Unlimited credits
+    - Custom credit rates
+    - Dedicated infrastructure
+    - White-label options
+    - Custom integrations
+    - Unlimited team members
+    - On-premise deployment option
+    
+    Contact sales for pricing
+  </Tab>
+</Tabs>
+
+## Payment Methods
+
+### Accepted Payment Methods
+- **Credit/Debit Cards**: Visa, Mastercard, American Express, Discover
+- **Digital Wallets**: PayPal, Apple Pay, Google Pay
+- **Bank Transfer**: For Enterprise plans
+- **Cryptocurrency**: Bitcoin, Ethereum (Enterprise only)
+
+### Payment Security
+- PCI DSS compliant
+- Encrypted transactions
+- Secure payment processing via Stripe
+- No card details stored on our servers
+
+## Billing Cycle
+
+### Subscription Billing
+- Billed monthly on signup date
+- Auto-renewal unless cancelled
+- Prorated refunds for cancellations
+- Credits added immediately upon payment
+
+### Credit Purchases
+- One-time payment
+- Credits added instantly
+- No expiration date
+- Receipt emailed immediately
+
+## Managing Your Subscription
+
+### View Billing Information
+1. Go to **Settings** > **Billing**
+2. View current plan and credit balance
+3. See usage history and invoices
+4. Download receipts
+
+### Upgrade/Downgrade Plan
+1. Navigate to **Settings** > **Billing**
+2. Click **Change Plan**
+3. Select new plan
+4. Confirm changes
+5. Prorated adjustment applied
+
+### Cancel Subscription
+1. Go to **Settings** > **Billing**
+2. Click **Cancel Subscription**
+3. Confirm cancellation
+4. Access continues until end of billing period
+5. Unused credits remain in account
+
+## Invoices & Receipts
+
+### Accessing Invoices
+- Available in **Settings** > **Billing** > **Invoices**
+- Downloadable as PDF
+- Emailed automatically after each payment
+- Includes detailed usage breakdown
+
+### Invoice Information
+- Invoice number and date
+- Billing period
+- Credits purchased/used
+- Amount paid
+- Payment method
+- Tax information (if applicable)
+
+## Refund Policy
+
+### Eligible for Refund
+- Unused credit packages within 30 days
+- Service outages affecting generation
+- Billing errors or duplicate charges
+- Subscription cancellation (prorated)
+
+### Not Eligible for Refund
+- Used credits
+- Subscription fees after 30 days
+- Credits purchased more than 30 days ago
+- Promotional or bonus credits
+
+### Request Refund
+1. Email contact@zoice.com
+2. Include order number and reason
+3. Response within 2 business days
+4. Refund processed within 5-7 business days
+
+## Common Billing Issues
+
+<AccordionGroup>
+  <Accordion title="Payment Declined">
+    **Possible Causes:**
+    - Insufficient funds
+    - Card expired
+    - Billing address mismatch
+    - Bank security hold
+    
+    **Solutions:**
+    - Verify card details
+    - Check with your bank
+    - Update billing address
+    - Try alternative payment method
+    - Contact support for assistance
+  </Accordion>
+  
+  <Accordion title="Credits Not Added">
+    **Possible Causes:**
+    - Payment processing delay
+    - System sync issue
+    - Payment failed
+    
+    **Solutions:**
+    - Wait 5-10 minutes
+    - Refresh your dashboard
+    - Check payment confirmation email
+    - Contact support with order number
+  </Accordion>
+  
+  <Accordion title="Unexpected Charges">
+    **Possible Causes:**
+    - Auto-renewal subscription
+    - Multiple generations
+    - High-cost model usage
+    
+    **Solutions:**
+    - Review usage history
+    - Check subscription status
+    - Monitor credit consumption
+    - Set usage alerts
+  </Accordion>
+  
+  <Accordion title="Can't Update Payment Method">
+    **Possible Causes:**
+    - Browser cache issues
+    - Payment processor error
+    - Invalid card information
+    
+    **Solutions:**
+    - Clear browser cache
+    - Try different browser
+    - Verify card details
+    - Contact support
+  </Accordion>
+</AccordionGroup>
+
+## Usage Tracking
+
+### Monitor Credit Usage
+- Real-time credit balance display
+- Detailed usage history
+- Filter by date, model, or project
+- Export usage reports
+
+### Set Usage Alerts
+1. Go to **Settings** > **Notifications**
+2. Enable credit balance alerts
+3. Set threshold (e.g., 100 credits remaining)
+4. Receive email notifications
+
+## Tax Information
+
+### Sales Tax
+- Applied based on billing address
+- Varies by location
+- Shown before payment confirmation
+- Included in invoices
+
+### VAT (European Union)
+- VAT charged for EU customers
+- Reverse charge for businesses with valid VAT ID
+- Enter VAT ID in billing settings
+
+### Business Information
+- Add company name and tax ID
+- Update in **Settings** > **Billing** > **Business Info**
+- Appears on all invoices
+
+## Enterprise Billing
+
+### Custom Contracts
+- Annual or multi-year agreements
+- Volume discounts
+- Flexible payment terms
+- Dedicated account manager
+
+### Invoice Billing
+- Net 30/60/90 payment terms
+- Purchase orders accepted
+- Consolidated monthly invoicing
+- Custom billing cycles
+
+## Getting Help
+
+<CardGroup cols={2}>
+  <Card title="Billing Support" icon="headset">
+    Email billing@zoice.com for payment issues
+  </Card>
+  
+  <Card title="Sales Inquiries" icon="phone">
+    Contact sales@zoice.com for Enterprise plans
+  </Card>
+  
+  <Card title="Usage Help" icon="chart-line" href="/troubleshooting/limits">
+    Learn about usage limits
+  </Card>
+  
+  <Card title="Common Errors" icon="circle-exclamation" href="/troubleshooting/common-errors">
+    Troubleshoot billing errors
+  </Card>
+</CardGroup>
+
+<Tip>
+Set up usage alerts to avoid running out of credits during important projects!
+</Tip>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Purchase Credits" icon="shopping-cart">
+    Buy credits to start creating
+  </Card>
+  <Card title="Usage Limits" icon="gauge" href="/troubleshooting/limits">
+    Understand rate limits and quotas
+  </Card>
+</CardGroup>

@@ -1,0 +1,328 @@
+---
+title: Common Errors
+description: Troubleshoot common errors and issues when using Zoice's AI generation tools.
+---
+
+## Overview
+
+This guide helps you resolve common errors and issues you might encounter while using Zoice. Find solutions to frequent problems and learn how to get the best results from our AI tools.
+
+## Generation Errors
+
+### Image Generation Failures
+
+<AccordionGroup>
+  <Accordion title="Error: Generation Failed">
+    **Possible Causes:**
+    - Server overload or temporary outage
+    - Invalid prompt or parameters
+    - Network connectivity issues
+    
+    **Solutions:**
+    - Wait a moment and try again
+    - Simplify your prompt
+    - Check your internet connection
+    - Try a different model
+    - Contact support if issue persists
+  </Accordion>
+  
+  <Accordion title="Error: Prompt Rejected">
+    **Possible Causes:**
+    - Prompt violates content policy
+    - Contains prohibited keywords
+    - Requests inappropriate content
+    
+    **Solutions:**
+    - Review Zoice content policy
+    - Rephrase your prompt
+    - Remove potentially problematic terms
+    - Ensure request is appropriate
+  </Accordion>
+  
+  <Accordion title="Error: Invalid Parameters">
+    **Possible Causes:**
+    - Resolution exceeds model limits
+    - Incompatible aspect ratio
+    - Invalid settings combination
+    
+    **Solutions:**
+    - Check model specifications
+    - Use supported resolutions
+    - Verify aspect ratio compatibility
+    - Reset to default settings
+  </Accordion>
+</AccordionGroup>
+
+### Video Generation Failures
+
+<AccordionGroup>
+  <Accordion title="Error: Video Processing Failed">
+    **Possible Causes:**
+    - Prompt too complex for model
+    - Duration exceeds limits
+    - Server processing error
+    
+    **Solutions:**
+    - Simplify scene description
+    - Reduce video duration
+    - Try different model (e.g., Fast variant)
+    - Retry generation
+  </Accordion>
+  
+  <Accordion title="Error: Reference Image Invalid">
+    **Possible Causes:**
+    - Image file corrupted
+    - Unsupported format
+    - File size too large
+    - Resolution too low/high
+    
+    **Solutions:**
+    - Use JPG, PNG, or WebP format
+    - Ensure file is under 10MB
+    - Use images 512x512 to 4096x4096
+    - Re-export image in supported format
+  </Accordion>
+</AccordionGroup>
+
+### Voice Generation Failures
+
+<AccordionGroup>
+  <Accordion title="Error: Text-to-Speech Failed">
+    **Possible Causes:**
+    - Text contains unsupported characters
+    - Text too long for single generation
+    - Invalid SSML markup
+    
+    **Solutions:**
+    - Remove special characters
+    - Break text into smaller chunks
+    - Check SSML syntax
+    - Use plain text format
+  </Accordion>
+  
+  <Accordion title="Error: Voice Clone Failed">
+    **Possible Causes:**
+    - Audio sample too short
+    - Poor audio quality
+    - Multiple speakers in sample
+    - Unsupported audio format
+    
+    **Solutions:**
+    - Provide at least 30 seconds of audio
+    - Use clear, high-quality recording
+    - Ensure single speaker only
+    - Convert to MP3, WAV, or M4A
+  </Accordion>
+</AccordionGroup>
+
+## Account & Authentication Errors
+
+<AccordionGroup>
+  <Accordion title="Error: Login Failed">
+    **Possible Causes:**
+    - Incorrect email or password
+    - Account not verified
+    - Account suspended
+    
+    **Solutions:**
+    - Verify credentials
+    - Check email for verification link
+    - Use "Forgot Password" to reset
+    - Contact support for account issues
+  </Accordion>
+  
+  <Accordion title="Error: Session Expired">
+    **Possible Causes:**
+    - Logged in for extended period
+    - Security timeout
+    - Multiple device login
+    
+    **Solutions:**
+    - Log in again
+    - Enable "Remember Me"
+    - Check for security notifications
+  </Accordion>
+</AccordionGroup>
+
+## Credit & Billing Errors
+
+<AccordionGroup>
+  <Accordion title="Error: Insufficient Credits">
+    **Possible Causes:**
+    - Credit balance depleted
+    - Generation costs more than available credits
+    
+    **Solutions:**
+    - Purchase additional credits
+    - Use lower-cost model
+    - Reduce resolution or duration
+    - Check credit balance in dashboard
+  </Accordion>
+  
+  <Accordion title="Error: Payment Failed">
+    **Possible Causes:**
+    - Card declined
+    - Insufficient funds
+    - Billing address mismatch
+    - Payment method expired
+    
+    **Solutions:**
+    - Verify card details
+    - Check with your bank
+    - Update billing information
+    - Try alternative payment method
+  </Accordion>
+</AccordionGroup>
+
+## Upload & File Errors
+
+<AccordionGroup>
+  <Accordion title="Error: File Upload Failed">
+    **Possible Causes:**
+    - File too large
+    - Unsupported format
+    - Network interruption
+    - Server storage full
+    
+    **Solutions:**
+    - Compress file if too large
+    - Convert to supported format
+    - Check internet connection
+    - Try uploading again
+    - Contact support if persistent
+  </Accordion>
+  
+  <Accordion title="Error: Invalid File Format">
+    **Possible Causes:**
+    - File extension doesn't match content
+    - Corrupted file
+    - Unsupported file type
+    
+    **Solutions:**
+    - Verify file format
+    - Re-export from source application
+    - Use supported formats (JPG, PNG, MP4, etc.)
+    - Check file isn't corrupted
+  </Accordion>
+</AccordionGroup>
+
+## Quality Issues
+
+<AccordionGroup>
+  <Accordion title="Low Quality Output">
+    **Possible Causes:**
+    - Resolution set too low
+    - Prompt lacks quality keywords
+    - Using fast/economy model
+    - Compressed input files
+    
+    **Solutions:**
+    - Increase resolution settings
+    - Add "high quality", "detailed" to prompts
+    - Use premium models (Imagen 4, Veo 3.1)
+    - Use high-quality input files
+  </Accordion>
+  
+  <Accordion title="Unexpected Results">
+    **Possible Causes:**
+    - Ambiguous prompt
+    - Contradictory instructions
+    - Model limitations
+    
+    **Solutions:**
+    - Make prompt more specific
+    - Remove contradictions
+    - Simplify complex requests
+    - Try different model
+    - Iterate and refine
+  </Accordion>
+</AccordionGroup>
+
+## Performance Issues
+
+<AccordionGroup>
+  <Accordion title="Slow Generation Times">
+    **Possible Causes:**
+    - High server load
+    - Using premium models
+    - Large file sizes
+    - Complex prompts
+    
+    **Solutions:**
+    - Try during off-peak hours
+    - Use faster models (Nano Banana, Veo Fast)
+    - Reduce resolution
+    - Simplify prompts
+  </Accordion>
+  
+  <Accordion title="Page Loading Slowly">
+    **Possible Causes:**
+    - Slow internet connection
+    - Browser cache issues
+    - Too many browser tabs
+    
+    **Solutions:**
+    - Check internet speed
+    - Clear browser cache
+    - Close unnecessary tabs
+    - Try different browser
+  </Accordion>
+</AccordionGroup>
+
+## Error Codes
+
+| Code | Meaning | Solution |
+|------|---------|----------|
+| **400** | Bad Request | Check your input parameters |
+| **401** | Unauthorized | Log in again |
+| **403** | Forbidden | Check account permissions |
+| **404** | Not Found | Verify URL or resource exists |
+| **429** | Too Many Requests | Wait before retrying |
+| **500** | Server Error | Try again later or contact support |
+| **503** | Service Unavailable | Temporary outage, try later |
+
+## Getting Help
+
+<CardGroup cols={2}>
+  <Card title="Check Status" icon="signal">
+    Visit status.zoice.com for service status
+  </Card>
+  
+  <Card title="Contact Support" icon="headset">
+    Email contact@zoice.com for assistance
+  </Card>
+  
+  <Card title="Community Forum" icon="users">
+    Ask questions in the community
+  </Card>
+  
+  <Card title="Documentation" icon="book">
+    Search our comprehensive guides
+  </Card>
+</CardGroup>
+
+## Reporting Bugs
+
+When reporting issues, please include:
+
+- **Error Message**: Exact error text
+- **Steps to Reproduce**: What you were doing
+- **Model Used**: Which AI model
+- **Browser/Device**: Your setup
+- **Screenshots**: If applicable
+- **Account Email**: For faster support
+
+<Tip>
+Most errors can be resolved by refreshing the page, checking your internet connection, or trying again in a few moments.
+</Tip>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Billing Help" icon="dollar-sign" href="/troubleshooting/billing">
+    Resolve billing and payment issues
+  </Card>
+  <Card title="Usage Limits" icon="gauge" href="/troubleshooting/limits">
+    Understand usage limits and quotas
+  </Card>
+</CardGroup>
