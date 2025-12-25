@@ -1,0 +1,55 @@
+/* Custom Image Framing for Documentation Pages */
+
+/* Frame all images with consistent sizing */
+.image-frame {
+    max-width: 800px;
+    width: 100%;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+/* Ensure images inside the frame are responsive */
+.image-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Alternative: Style all content images directly */
+article img,
+.markdown img {
+    max-width: 800px;
+    width: 100%;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+
+    .image-frame,
+    article img,
+    .markdown img {
+        border-color: #374151;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+
+    .image-frame,
+    article img,
+    .markdown img {
+        max-width: 100%;
+        margin: 1.5rem auto;
+        border-radius: 8px;
+    }
+}

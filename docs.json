@@ -8,6 +8,7 @@
         "dark": "#15803D"
     },
     "favicon": "/logo.svg",
+    "customCss": "/custom.css",
     "navigation": {
         "tabs": [
             {
@@ -72,8 +73,7 @@
                                 "group": "AI Avatar Generator",
                                 "pages": [
                                     "zoice-tools/ai-avatar-generator/image-to-avatar",
-                                    "zoice-tools/ai-avatar-generator/text-to-avatar",
-                                    "zoice"
+                                    "zoice-tools/ai-avatar-generator/text-to-avatar"
                                 ]
                             }
                         ]
