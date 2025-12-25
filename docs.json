@@ -17,7 +17,6 @@
                     {
                         "group": "Getting Started",
                         "pages": [
-                            "index",
                             "login",
                             "signup"
                         ]
@@ -205,21 +204,7 @@
                     }
                 ]
             }
-        ],
-        "global": {
-            "anchors": [
-                {
-                    "anchor": "Documentation",
-                    "href": "https://docs.zoice.com",
-                    "icon": "book-open-cover"
-                },
-                {
-                    "anchor": "Blog",
-                    "href": "https://zoice.com/blog",
-                    "icon": "newspaper"
-                }
-            ]
-        }
+        ]
     },
     "logo": {
         "light": "/logo/light.svg",

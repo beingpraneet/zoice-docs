@@ -1,41 +1,58 @@
 # Image Usage Guide
 
-## Automatic Styling (Recommended)
+## Recommended: Use Frame Component
 
-All images in your MDX files will automatically be styled with consistent framing. Simply use standard markdown image syntax:
+For consistent image framing across all documentation pages, wrap your images in Mintlify's `<Frame>` component:
 
-```markdown
-![Image Description](../images/your-image.png)
+```mdx
+<Frame>
+  ![Image Description](../images/your-image.png)
+</Frame>
 ```
 
-The custom CSS will automatically apply:
+This ensures:
 
-- **Max width**: 800px
-- **Responsive**: Scales down on smaller screens
-- **Rounded corners**: 12px border radius
-- **Border**: Light gray border (adapts to dark mode)
-- **Shadow**: Subtle drop shadow for depth
-- **Centered**: Automatically centered on the page
+- **Consistent styling**: All framed images have the same appearance
+- **Fixed max width**: 800px maximum width for uniformity
+- **Responsive**: Automatically scales on smaller screens
+- **Professional look**: Rounded corners, borders, and subtle shadows
+- **Dark mode support**: Adapts to light/dark themes automatically
 
 ## Examples
 
 ### Single Image
 
-```markdown
-![Zoice Login Page](../images/login-page.png)
+```mdx
+<Frame>
+  ![Zoice Login Page](../images/login-page.png)
+</Frame>
 ```
 
 ### Multiple Images
 
-```markdown
-![Step 1 Screenshot](../images/step-1.png)
+```mdx
+<Frame>
+  ![Step 1 Screenshot](../images/step-1.png)
+</Frame>
 
-![Step 2 Screenshot](../images/step-2.png)
+<Frame>
+  ![Step 2 Screenshot](../images/step-2.png)
+</Frame>
 ```
+
+## Alternative: Plain Markdown
+
+You can also use plain markdown syntax, and the custom CSS will apply styling:
+
+```markdown
+![Image Description](../images/your-image.png)
+```
+
+However, using `<Frame>` is recommended for the most consistent results.
 
 ## Notes
 
-- All images will have the same maximum width (800px) for consistency
+- All framed images will have the same maximum width (800px) for consistency
 - Images smaller than 800px will display at their natural size
 - On mobile devices, images will scale to fit the screen width
-- Dark mode is automatically supported
+- Always include descriptive alt text for accessibility
