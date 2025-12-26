@@ -27,7 +27,6 @@
                             "features/image-generator",
                             "features/video-generator",
                             "features/voice-generator",
-                            "features/voice-cloning",
                             {
                                 "group": "AI Avatar",
                                 "pages": [
