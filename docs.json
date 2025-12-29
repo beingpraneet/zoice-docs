@@ -152,8 +152,7 @@
                                 "group": "Veo 2",
                                 "pages": [
                                     "ai-models/video/veo-2/overview",
-                                    "ai-models/video/veo-2/text-prompt",
-                                    "ai-models/video/veo-2/ref-image"
+                                    "ai-models/video/veo-2/text-prompt"
                                 ]
                             },
                             {
@@ -168,8 +167,7 @@
                                 "group": "Veo 3.0",
                                 "pages": [
                                     "ai-models/video/veo-3-0/overview",
-                                    "ai-models/video/veo-3-0/text-prompt",
-                                    "ai-models/video/veo-3-0/ref-image"
+                                    "ai-models/video/veo-3-0/text-prompt"
                                 ]
                             },
                             {
