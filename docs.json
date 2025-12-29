@@ -159,8 +159,9 @@
                                 "group": "Veo 3.1",
                                 "pages": [
                                     "ai-models/video/veo-3-1/overview",
-                                    "ai-models/video/veo-3-1/text-prompt",
-                                    "ai-models/video/veo-3-1/ref-image"
+                                    "ai-models/video/veo-3-1/text-to-video",
+                                    "ai-models/video/veo-3-1/image-to-video",
+                                    "ai-models/video/veo-3-1/frame-to-video"
                                 ]
                             },
                             {
@@ -174,16 +175,15 @@
                                 "group": "Veo 3.1 Fast",
                                 "pages": [
                                     "ai-models/video/veo-3-1-fast/overview",
-                                    "ai-models/video/veo-3-1-fast/text-prompt",
-                                    "ai-models/video/veo-3-1-fast/ref-image"
+                                    "ai-models/video/veo-3-1-fast/text-to-video",
+                                    "ai-models/video/veo-3-1-fast/image-to-video",
+                                    "ai-models/video/veo-3-1-fast/frame-to-video"
                                 ]
                             },
                             {
                                 "group": "Veo 3.0 Fast",
                                 "pages": [
-                                    "ai-models/video/veo-3-0-fast/overview",
-                                    "ai-models/video/veo-3-0-fast/text-prompt",
-                                    "ai-models/video/veo-3-0-fast/ref-image"
+                                    "ai-models/video/veo-3-0-fast/overview"
                                 ]
                             }
                         ]
