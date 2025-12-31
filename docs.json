@@ -2,7 +2,14 @@
     "$schema": "https://zoice.com/",
     "theme": "mint",
     "name": "Zoice Documentation",
-    "head": "<meta name=\"msvalidate.01\" content=\"5A20219C9046FBBD751664D63D5399B6\" />",
+    "seo": {
+        "metatags": [
+            {
+                "name": "msvalidate.01",
+                "content": "5A20219C9046FBBD751664D63D5399B6"
+            }
+        ]
+    },
     "colors": {
         "primary": "#16A34A",
         "light": "#07C983",
