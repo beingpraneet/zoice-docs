@@ -9,7 +9,7 @@
     },
     "favicon": "/logo.svg",
     "customCss": "/custom.css",
-    "analytics": {
+    "integrations": {
         "ga4": "G-Q8CC17B12S"
     },
     "navigation": {
