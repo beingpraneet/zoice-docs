@@ -10,7 +10,9 @@
     "favicon": "/logo.svg",
     "customCss": "/custom.css",
     "integrations": {
-        "ga4": "G-Q8CC17B12S"
+        "ga4": {
+            "measurementId": "G-Q8CC17B12S"
+        }
     },
     "navigation": {
         "tabs": [
