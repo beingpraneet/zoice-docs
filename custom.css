@@ -170,4 +170,26 @@ main img {
     width: auto !important;
     text-align: center !important;
     margin: 0 !important;
+    color: #000000 !important;
+    /* Ensure text is black */
+    opacity: 1 !important;
+    /* Ensure text is always visible */
+}
+
+/* Force navigation items and their icons to be always fully visible and black */
+.__proprofs-ml-navigation {
+    opacity: 1 !important;
+}
+
+.__proprofs-ml-navigation svg path {
+    fill: #000000 !important;
+    /* Force icons to be black */
+    opacity: 1 !important;
+    /* Ensure icons are always visible */
+}
+
+/* Make the agent name in the chat profile black */
+#proprofs_opname,
+.proprofs_opname {
+    color: #000000 !important;
 }
