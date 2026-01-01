@@ -196,14 +196,16 @@ main img {
 }
 
 /* Chat Window Header Styling - Unified Dark Header */
+#_proprofs_trk_main_div_,
+#_proprofs_trk_main_body_,
 #_proprofs_trk_inner_header_,
+#proporfs_chat_body,
 .proprofs_chat_body_header {
-    background: #333232 !important;
     background-color: #333232 !important;
+    background-image: none !important;
+    background: #333232 !important;
     color: #ffffff !important;
     border: none !important;
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
 }
 
 /* Ensure all text and icons in the whole header area are white */
@@ -217,18 +219,35 @@ main img {
     color: #ffffff !important;
 }
 
-/* 2. Remove Name Truncation & 3. Stack Stars BELOW the Name */
+/* Remove the white line/gap between header segments */
+.proprofs_chat_body_header {
+    margin-top: 0 !important;
+    border-top: none !important;
+    padding: 10px 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    height: auto !important;
+    min-height: 70px !important;
+}
+
+#_proprofs_trk_inner_header_ {
+    margin-bottom: 0 !important;
+    border-bottom: none !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+/* Remove Name Truncation & Stack Stars BELOW the Name */
 #pro_op_detail {
     display: flex !important;
     flex-direction: column !important;
-    /* Stack name and stars */
     justify-content: center !important;
     align-items: flex-start !important;
-    padding-left: 15px !important;
+    padding-left: 12px !important;
     width: auto !important;
-    max-width: 200px !important;
-    /* Give it enough space */
+    max-width: 220px !important;
     overflow: visible !important;
+    height: auto !important;
 }
 
 #proprofs_opname {
@@ -238,7 +257,6 @@ main img {
     white-space: nowrap !important;
     overflow: visible !important;
     text-overflow: clip !important;
-    /* Remove ellipsis */
     padding: 0 !important;
     margin: 0 0 2px 0 !important;
     font-size: 16px !important;
@@ -254,19 +272,32 @@ main img {
     width: auto !important;
 }
 
-/* 4. Remove the redundant logo/sparkle overlapping the area */
+/* Remove the redundant logo/sparkle and extraneous containers */
 #pro_logo_detail {
     display: none !important;
 }
 
-/* Refine Header Avatar style */
-.pro_op_img,
+/* Remove the white curved/pill shape behind avatar */
+.pro_op_img {
+    border: none !important;
+    background: transparent !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline-block !important;
+}
+
+/* Header Avatar style */
+#ongoing_operator_img,
+.pro_op_img img,
 .proprofs_chat_body_header img {
     width: 48px !important;
     height: 48px !important;
     border-radius: 50% !important;
-    border: 2px solid rgba(255, 255, 255, 0.6) !important;
-    margin: 5px 0 !important;
+    border: 2px solid #ffffff !important;
+    display: block !important;
+    margin: 0 !important;
 }
 
 /* Dark Mode Compatibility for the Chat Window Body */
