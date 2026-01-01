@@ -180,3 +180,56 @@ main img {
     text-align: center !important;
     margin: 0 !important;
 }
+
+/* Chat Window Header & Bubble Styling */
+/* Black background for the header area where the name is */
+.proprofs_chat_body_header {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-bottom: 1px solid #333 !important;
+}
+
+.proprofs_chat_body_header #proprofs_opname,
+.proprofs_chat_body_header #__ppOperatorStatus__,
+.proprofs_chat_body_header ._proprofs_fa,
+.proprofs_chat_body_header .proprofs_title {
+    color: #ffffff !important;
+}
+
+/* Fix misalignment of chat and profile box (Operator side) */
+.pp_box_div.__opMsg__ {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    /* Move avatar to the left */
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+    margin-bottom: 12px !important;
+    padding-left: 10px !important;
+}
+
+.pp_inner_op_image {
+    margin: 0 8px 0 0 !important;
+    position: static !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
+}
+
+.pp_operator_box {
+    margin: 0 !important;
+    position: static !important;
+    display: inline-block !important;
+}
+
+/* Visitor bubble alignment */
+.pp_box_div.__visitorMsg__ {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+    margin-bottom: 12px !important;
+    padding-right: 10px !important;
+}
+
+.pp_visitor_msg {
+    margin: 0 !important;
+}
