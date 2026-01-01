@@ -1,15 +1,7 @@
 /* Custom Image Framing for Documentation Pages */
 
 /* Target all images in Mintlify content */
-img {
-    max-width: 800px !important;
-    width: 100%;
-    margin: 2rem auto;
-    display: block;
-    border-radius: 12px;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
+/* Target images specifically inside the documentation content to avoid interfering with widgets */
 
 /* Specific Mintlify content selectors */
 .prose img,
@@ -41,7 +33,6 @@ main img {
 }
 
 /* Dark mode class-based (Mintlify uses this) */
-.dark img,
 .dark .prose img,
 .dark article img,
 .dark .markdown img,
@@ -54,7 +45,6 @@ main img {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
 
-    img,
     .prose img,
     article img,
     .markdown img,
