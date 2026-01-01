@@ -200,14 +200,33 @@ main img {
     background-color: #333232 !important;
     color: #ffffff !important;
     border-bottom: 1px solid #444 !important;
+    padding: 15px !important;
+    min-height: 80px !important;
 }
 
 #proprofs_opname,
-.proprofs_opname,
+.proprofs_opname {
+    color: #ffffff !important;
+    margin-left: 12px !important;
+    /* Space between avatar and name */
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    display: inline-block !important;
+}
+
 .proprofs_chat_body_header #__ppOperatorStatus__,
 .proprofs_chat_body_header ._proprofs_fa,
 .proprofs_chat_body_header .proprofs_title {
     color: #ffffff !important;
+}
+
+/* Ensure the header avatar has proper spacing */
+.proprofs_chat_body_header img,
+.proprofs_chat_body_header .pp_op_img {
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50% !important;
+    border: 2px solid #fff !important;
 }
 
 /* Dark Mode Compatibility for the Chat Window Body */
