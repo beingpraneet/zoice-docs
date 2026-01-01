@@ -198,53 +198,75 @@ main img {
 /* Chat Window Header Styling - Unified Dark Header */
 #_proprofs_trk_inner_header_,
 .proprofs_chat_body_header {
-    background-color: #333232 !important;
     background: #333232 !important;
+    background-color: #333232 !important;
     color: #ffffff !important;
     border: none !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
 }
 
-/* Fix text and icon colors for the black background */
+/* Ensure all text and icons in the whole header area are white */
 #_proprofs_inner_header_text,
 #proprofs_opname,
 #__ppOperatorStatus__,
 #_proprofs_trk_inner_header_ a i,
 .proprofs_chat_body_header ._proprofs_fa,
-.proprofs_chat_body_header .proprofs_title {
+.proprofs_chat_body_header .proprofs_title,
+#pp_rating_box i {
     color: #ffffff !important;
 }
 
-/* Remove the overlapping logo on the right side of the agent bar */
+/* 2. Remove Name Truncation & 3. Stack Stars BELOW the Name */
+#pro_op_detail {
+    display: flex !important;
+    flex-direction: column !important;
+    /* Stack name and stars */
+    justify-content: center !important;
+    align-items: flex-start !important;
+    padding-left: 15px !important;
+    width: auto !important;
+    max-width: 200px !important;
+    /* Give it enough space */
+    overflow: visible !important;
+}
+
+#proprofs_opname {
+    display: block !important;
+    width: auto !important;
+    max-width: none !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    /* Remove ellipsis */
+    padding: 0 !important;
+    margin: 0 0 2px 0 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+/* Ensure stars are on their own line below the name */
+#pp_rating_box {
+    display: block !important;
+    position: static !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+}
+
+/* 4. Remove the redundant logo/sparkle overlapping the area */
 #pro_logo_detail {
     display: none !important;
 }
 
-/* Fix padding and layout for the agent profile bar */
-.proprofs_chat_body_header {
-    padding: 12px 15px !important;
-    display: flex !important;
-    align-items: center !important;
-    height: auto !important;
-    min-height: 70px !important;
-}
-
-/* Spacing between the avatar and the agent name */
-#proprofs_opname {
-    margin-left: 15px !important;
-    padding: 0 !important;
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    display: block !important;
-}
-
-/* Header Avatar Sizing and Border */
-.proprofs_chat_body_header img,
-.proprofs_chat_body_header .pp_op_img {
+/* Refine Header Avatar style */
+.pro_op_img,
+.proprofs_chat_body_header img {
     width: 48px !important;
     height: 48px !important;
     border-radius: 50% !important;
-    border: 2px solid rgba(255, 255, 255, 0.8) !important;
-    margin: 0 !important;
+    border: 2px solid rgba(255, 255, 255, 0.6) !important;
+    margin: 5px 0 !important;
 }
 
 /* Dark Mode Compatibility for the Chat Window Body */
