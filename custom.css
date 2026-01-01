@@ -171,25 +171,60 @@ main img {
     text-align: center !important;
     margin: 0 !important;
     color: #000000 !important;
-    /* Ensure text is black */
+    /* Default for Light Mode */
     opacity: 1 !important;
-    /* Ensure text is always visible */
 }
 
-/* Force navigation items and their icons to be always fully visible and black */
+/* Force navigation items and their icons to be always fully visible */
 .__proprofs-ml-navigation {
     opacity: 1 !important;
 }
 
 .__proprofs-ml-navigation svg path {
     fill: #000000 !important;
-    /* Force icons to be black */
+    /* Default for Light Mode */
     opacity: 1 !important;
-    /* Ensure icons are always visible */
 }
 
-/* Make the agent name in the chat profile black */
+/* Dark Mode Overrides for Navigation */
+.dark .__proprofs-ml-navigation span {
+    color: #ffffff !important;
+}
+
+.dark .__proprofs-ml-navigation svg path {
+    fill: #ffffff !important;
+}
+
+/* Chat Window Header Styling - Dark Header with White Name */
+.proprofs_chat_body_header {
+    background-color: #333232 !important;
+    color: #ffffff !important;
+    border-bottom: 1px solid #444 !important;
+}
+
 #proprofs_opname,
-.proprofs_opname {
-    color: #000000 !important;
+.proprofs_opname,
+.proprofs_chat_body_header #__ppOperatorStatus__,
+.proprofs_chat_body_header ._proprofs_fa,
+.proprofs_chat_body_header .proprofs_title {
+    color: #ffffff !important;
+}
+
+/* Dark Mode Compatibility for the Chat Window Body */
+.dark #proprofs_chat_panel_body,
+.dark .proprofs_chat_footer {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+.dark .pp_operator_box {
+    background-color: #333232 !important;
+    color: #ffffff !important;
+    border: 1px solid #444 !important;
+}
+
+.dark .pp_visitor_msg {
+    background-color: #2e7d32 !important;
+    /* Slightly darker green for dark mode */
+    color: #ffffff !important;
 }
