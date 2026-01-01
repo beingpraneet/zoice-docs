@@ -139,3 +139,35 @@ main img {
 .dark .step-content p {
     color: #9ca3af !important;
 }
+
+/* Chat Widget Bottom Navigation Alignment */
+/* This specifically centers the 'Home' and 'Chat' icons and text at the bottom of the widget */
+
+/* Reset icon sizing and display for navigation items */
+.__proprofs-ml-navigation svg,
+.__proprofs-ml-navigation img {
+    display: inline-block !important;
+    width: 24px !important;
+    height: 24px !important;
+    margin: 0 auto !important;
+    float: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Use flexbox to center the navigation buttons vertically */
+.__proprofs-ml-navigation {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2px !important;
+}
+
+/* Ensure the text labels are centered underneath the icons */
+.__proprofs-ml-navigation span {
+    display: inline-block !important;
+    width: auto !important;
+    text-align: center !important;
+    margin: 0 !important;
+}
