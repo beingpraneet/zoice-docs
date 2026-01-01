@@ -143,21 +143,28 @@ main img {
 /* Chat Widget Alignment Fix */
 /* Target the actual ProProfs classes used in the live widget identified via live debugging */
 
-/* 1. Reset the icons to be inline and centered */
+/* 1. Reset the icons to be inline and centered - ONLY for navigation items */
 .__proprofs-ml-navigation svg,
-.__proprofs-ml-navigation img,
-[id^="_proprofs_"] svg,
-[id^="_proprofs_"] img {
+.__proprofs-ml-navigation img {
     display: inline-block !important;
-    width: 20px !important;
-    height: 20px !important;
+    width: 24px !important;
+    height: 24px !important;
     margin: 0 auto !important;
     float: none !important;
     border: none !important;
     box-shadow: none !important;
 }
 
-/* 2. Ensure the navigation buttons use flexbox to center content */
+/* 2. Reset display for all widget images to prevent block-level breakage, but keep natural size for non-nav items like the logo */
+[id^="_proprofs_"] svg,
+[id^="_proprofs_"] img {
+    display: inline-block !important;
+    float: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* 3. Ensure the navigation buttons use flexbox to center content */
 .__proprofs-ml-navigation {
     display: flex !important;
     flex-direction: column !important;
@@ -166,7 +173,7 @@ main img {
     gap: 2px !important;
 }
 
-/* 3. Horizontal alignment for the text labels */
+/* 4. Horizontal alignment for the text labels */
 .__proprofs-ml-navigation span {
     display: inline-block !important;
     width: auto !important;
