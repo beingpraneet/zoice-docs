@@ -141,25 +141,35 @@ main img {
 }
 
 /* Chat Widget Alignment Fix */
-/* Reset any global styles that might affect the third-party chat widget */
-#proprofs_chat_container img,
-#proprofs_chat_container svg,
-.l2s-widget img,
-.l2s-widget svg {
+/* Target the actual ProProfs classes used in the live widget identified via live debugging */
+
+/* 1. Reset the icons to be inline and centered */
+.__proprofs-ml-navigation svg,
+.__proprofs-ml-navigation img,
+[id^="_proprofs_"] svg,
+[id^="_proprofs_"] img {
     display: inline-block !important;
-    width: auto !important;
-    height: auto !important;
-    margin: 0 !important;
-    max-width: none !important;
-    box-shadow: none !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 auto !important;
+    float: none !important;
     border: none !important;
+    box-shadow: none !important;
 }
 
-/* Ensure the footer items are aligned */
-.l2s-footer-item,
-[class*="chat-footer"] {
+/* 2. Ensure the navigation buttons use flexbox to center content */
+.__proprofs-ml-navigation {
     display: flex !important;
+    flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    gap: 5px !important;
+    gap: 2px !important;
+}
+
+/* 3. Horizontal alignment for the text labels */
+.__proprofs-ml-navigation span {
+    display: inline-block !important;
+    width: auto !important;
+    text-align: center !important;
+    margin: 0 !important;
 }
