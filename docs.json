@@ -80,8 +80,9 @@
                             {
                                 "group": "AI Avatar Generator",
                                 "pages": [
-                                    "zoice-tools/ai-avatar-generator/image-to-avatar",
-                                    "zoice-tools/ai-avatar-generator/text-to-avatar"
+                                    "zoice-tools/ai-avatar-generator/stock-avatar",
+                                    "zoice-tools/ai-avatar-generator/text-to-avatar",
+                                    "zoice-tools/ai-avatar-generator/image-to-avatar"
                                 ]
                             }
                         ]
