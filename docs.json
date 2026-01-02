@@ -41,7 +41,9 @@
                                 "group": "AI Avatar",
                                 "pages": [
                                     "features/ai-avatar/stock-avatar",
-                                    "features/ai-avatar/custom-avatar"
+                                    "features/ai-avatar/custom-avatar",
+                                    "zoice-tools/ai-avatar-generator/text-to-avatar",
+                                    "zoice-tools/ai-avatar-generator/image-to-avatar"
                                 ]
                             }
                         ]

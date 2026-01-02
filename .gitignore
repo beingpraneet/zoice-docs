@@ -12,12 +12,6 @@ Thumbs.db
 *.mkv
 *.webm
 
-# Images
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
 # (Optional: Sometimes images are needed in docs, but let's be careful)
 # images/
 
