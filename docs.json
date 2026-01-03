@@ -27,6 +27,7 @@
                     {
                         "group": "Getting Started",
                         "pages": [
+                            "index",
                             "login",
                             "signup"
                         ]
@@ -41,9 +42,7 @@
                                 "group": "AI Avatar",
                                 "pages": [
                                     "features/ai-avatar/stock-avatar",
-                                    "features/ai-avatar/custom-avatar",
-                                    "zoice-tools/ai-avatar-generator/text-to-avatar",
-                                    "zoice-tools/ai-avatar-generator/image-to-avatar"
+                                    "features/ai-avatar/custom-avatar"
                                 ]
                             }
                         ]
@@ -83,8 +82,8 @@
                                 "group": "AI Avatar Generator",
                                 "pages": [
                                     "zoice-tools/ai-avatar-generator/stock-avatar",
-                                    "zoice-tools/ai-avatar-generator/text-to-avatar",
-                                    "zoice-tools/ai-avatar-generator/image-to-avatar"
+                                    "zoice-tools/ai-avatar-generator/text-to-avatar-videos",
+                                    "zoice-tools/ai-avatar-generator/image-to-avatar-videos"
                                 ]
                             }
                         ]
