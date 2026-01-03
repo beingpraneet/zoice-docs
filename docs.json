@@ -1,10 +1,6 @@
 {
     "$schema": "https://zoice.com/",
-    "settings": {
-        "customScripts": [
-            "/custom.js"
-        ]
-    },
+    "settings": {},
     "theme": "mint",
     "name": "Zoice Documentation",
     "colors": {
