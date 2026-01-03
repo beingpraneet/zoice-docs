@@ -10,6 +10,17 @@
     },
     "favicon": "/favicon.svg",
     "customCss": "/custom.css",
+    "seo": {
+        "metadata": {
+            "og:title": "Zoice Documentation - AI Creative Tools",
+            "og:description": "Official documentation for Zoice. Create stunning AI-generated images, videos, voices, and avatars.",
+            "og:site_name": "Zoice",
+            "twitter:card": "summary_large_image",
+            "twitter:site": "@zoiceapp",
+            "twitter:title": "Zoice Documentation - AI Creative Tools",
+            "twitter:description": "Official documentation for Zoice. Create stunning AI-generated images, videos, voices, and avatars."
+        }
+    },
     "integrations": {
         "ga4": {
             "measurementId": "G-Q8CC17B12S"
