@@ -5,20 +5,21 @@
  */
 
 function injectLogoText() {
-    // Target the main logo link (usually the first link pointing to home)
-    const logoLink = document.querySelector('a[href="/"]');
-    if (!logoLink) return;
+    // Target all logo links (desktop sidebar and mobile top nav)
+    var logoLinks = document.querySelectorAll('a[href="/"]');
 
-    // Check if text already exists to avoid duplicates
-    if (logoLink.querySelector('.custom-logo-text')) return;
+    logoLinks.forEach(function (logoLink) {
+        // Check if text already exists to avoid duplicates
+        if (logoLink.querySelector('.custom-logo-text')) return;
 
-    const brandName = document.createElement('span');
-    brandName.className = 'custom-logo-text';
-    brandName.innerText = 'Zoice';
-    brandName.style.display = 'inline-block'; // Defensive inline-block
+        var brandName = document.createElement('span');
+        brandName.className = 'custom-logo-text';
+        brandName.innerText = 'Zoice';
+        brandName.style.display = 'inline-block'; // Defensive inline-block
 
-    // Append to the end of the link container to ensure it follows any light/dark logos
-    logoLink.appendChild(brandName);
+        // Append to the end of the link container to ensure it follows any light/dark logos
+        logoLink.appendChild(brandName);
+    });
 }
 
 function transformSidebarHeaders() {
