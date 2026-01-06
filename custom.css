@@ -142,13 +142,17 @@ main img {
 
 /* Logo + Text Branding */
 .custom-logo-text {
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
     font-weight: 800 !important;
-    margin-left: 0.75rem !important;
-    color: inherit !important;
+    margin-left: 0.1rem !important;
+    color: #000000 !important;
     letter-spacing: -0.025em;
     display: inline-block !important;
     white-space: nowrap !important;
+}
+
+.dark .custom-logo-text {
+    color: #FFFFFF !important;
 }
 
 /* Force horizontal layout for ANY link containing the logo */
@@ -166,10 +170,9 @@ nav a[href="/"],
 
 /* Override block display on logo images */
 a[href="/"] img {
-    display: inline-block !important;
-    /* Forces out of block layout */
     margin: 0 !important;
     border: none !important;
     box-shadow: none !important;
     flex-shrink: 0 !important;
+    max-height: 24px !important;
 }
