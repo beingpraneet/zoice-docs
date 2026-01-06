@@ -1,9 +1,25 @@
 /**
- * Zoice Documentation - Custom SEO Header Fix
- * This script transforms sidebar <h5> group titles into <div> elements.
- * This ensures that the page's <H1> is the first heading in the DOM source order,
- * providing better SEO hierarchy as reported by search indexers.
+ * Zoice Documentation - Custom SEO Header Fix & Branding Integration
+ * This script transforms sidebar <h5> group titles into <div> elements and
+ * injects the "Zoice" brand name next to the SVG logo.
  */
+
+function injectLogoText() {
+    // Target the main logo link (usually the first link pointing to home)
+    const logoLink = document.querySelector('a[href="/"]');
+    if (!logoLink) return;
+
+    // Check if text already exists to avoid duplicates
+    if (logoLink.querySelector('.custom-logo-text')) return;
+
+    const brandName = document.createElement('span');
+    brandName.className = 'custom-logo-text';
+    brandName.innerText = 'Zoice';
+    brandName.style.display = 'inline-block'; // Defensive inline-block
+
+    // Append to the end of the link container to ensure it follows any light/dark logos
+    logoLink.appendChild(brandName);
+}
 
 function transformSidebarHeaders() {
     const sidebarH5s = document.querySelectorAll('#sidebar-content h5#sidebar-title');
@@ -24,24 +40,26 @@ function transformSidebarHeaders() {
 
 // Run on initial load
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', transformSidebarHeaders);
+    document.addEventListener('DOMContentLoaded', () => {
+        transformSidebarHeaders();
+        injectLogoText();
+    });
 } else {
     transformSidebarHeaders();
+    injectLogoText();
 }
 
-// Observe for sidebar changes (SPA navigation)
-const sidebarObserver = new MutationObserver((mutations) => {
-    // Use a small debounce or check if H5s exist before transforming
-    if (document.querySelectorAll('#sidebar-content h5#sidebar-title').length > 0) {
-        transformSidebarHeaders();
-    }
+// Observe for changes (SPA navigation)
+const contentObserver = new MutationObserver((mutations) => {
+    transformSidebarHeaders();
+    injectLogoText();
 });
 
 // Start observing the body or a stable parent container
 const startObserving = () => {
     const target = document.body;
     if (target) {
-        sidebarObserver.observe(target, { childList: true, subtree: true });
+        contentObserver.observe(target, { childList: true, subtree: true });
     } else {
         setTimeout(startObserving, 100);
     }

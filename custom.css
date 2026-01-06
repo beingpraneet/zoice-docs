@@ -139,3 +139,37 @@ main img {
 .dark .step-content p {
     color: #9ca3af !important;
 }
+
+/* Logo + Text Branding */
+.custom-logo-text {
+    font-size: 1.5rem !important;
+    font-weight: 800 !important;
+    margin-left: 0.75rem !important;
+    color: inherit !important;
+    letter-spacing: -0.025em;
+    display: inline-block !important;
+    white-space: nowrap !important;
+}
+
+/* Force horizontal layout for ANY link containing the logo */
+a[href="/"],
+header a[href="/"],
+nav a[href="/"],
+[id*="sidebar"] a[href="/"] {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    height: auto !important;
+    text-decoration: none !important;
+}
+
+/* Override block display on logo images */
+a[href="/"] img {
+    display: inline-block !important;
+    /* Forces out of block layout */
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    flex-shrink: 0 !important;
+}

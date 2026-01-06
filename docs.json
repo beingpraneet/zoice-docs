@@ -5,7 +5,7 @@
             "/custom.js"
         ]
     },
-    "theme": "mint",
+    "theme": "maple",
     "name": "Zoice Documentation",
     "colors": {
         "primary": "#16A34A",
@@ -227,8 +227,9 @@
         ]
     },
     "logo": {
-        "light": "/logo/light.svg",
-        "dark": "/logo/dark.svg"
+        "light": "/logo/4x.svg",
+        "dark": "/logo/light.svg",
+        "text": "Zoice"
     },
     "navbar": {
         "links": [
