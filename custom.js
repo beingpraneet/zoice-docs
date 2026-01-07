@@ -5,10 +5,13 @@
  */
 
 function injectLogoText() {
-    // Target all logo links (desktop sidebar and mobile top nav)
+    // Target only the actual logo links that contain the nav-logo images
     var logoLinks = document.querySelectorAll('a[href="/"]');
 
     logoLinks.forEach(function (logoLink) {
+        // Only inject if the link contains a logo image
+        if (!logoLink.querySelector('img.nav-logo')) return;
+
         // Check if text already exists to avoid duplicates
         if (logoLink.querySelector('.custom-logo-text')) return;
 
