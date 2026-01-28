@@ -103,8 +103,7 @@
                         "group": "Troubleshooting",
                         "pages": [
                             "troubleshooting/common-errors",
-                            "troubleshooting/billing",
-                            "troubleshooting/limits"
+                            "troubleshooting/billing"
                         ]
                     },
                     {
