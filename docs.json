@@ -151,18 +151,11 @@
                                 ]
                             },
                             {
-                                "group": "Imagen 3",
+                                "group": "Nano Banana 2",
                                 "pages": [
-                                    "ai-models/image/imagen-3/overview",
-                                    "ai-models/image/imagen-3/text-prompt"
-                                ]
-                            },
-                            {
-                                "group": "Nano Banana Pro",
-                                "pages": [
-                                    "ai-models/image/nano-banana-pro/overview",
-                                    "ai-models/image/nano-banana-pro/text-prompt",
-                                    "ai-models/image/nano-banana-pro/ref-image"
+                                    "ai-models/image/nano-banana-2/overview",
+                                    "ai-models/image/nano-banana-2/text-prompt",
+                                    "ai-models/image/nano-banana-2/ref-image"
                                 ]
                             }
                         ]
