@@ -215,6 +215,17 @@
                         ]
                     }
                 ]
+            },
+            {
+                "tab": "Learning",
+                "groups": [
+                    {
+                        "group": "Tutorials",
+                        "pages": [
+                            "learning/tutorials"
+                        ]
+                    }
+                ]
             }
         ]
     },
