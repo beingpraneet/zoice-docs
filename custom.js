@@ -4,6 +4,40 @@
  * injects the "Zoice" brand name next to the SVG logo.
  */
 
+/**
+ * ─────────────────────────────────────────────────────────────────────────────
+ * TUTORIALS DATA
+ * To add a new tutorial: append an object to this array.
+ * Fields:
+ *   title    (string)  – Card heading shown on the grid
+ *   href     (string)  – Link to the tutorial page
+ *   image    (string|null) – Path to featured image, or null for black placeholder
+ *   description (string)  – Short summary shown under the image
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+const TUTORIALS = [
+    {
+        title: 'How to Make a Singing AI Avatar Video',
+        href: '/learning/singing-ai-avatar',
+        image: null,
+        description: 'Create singing AI avatar videos by combining your talking avatars with customized vocal tracks or uploaded music.'
+    },
+    {
+        title: 'How to Make a Cartoon Character Talk Using AI',
+        href: '/learning/cartoon-character-talk',
+        image: null,
+        description: 'Animate any cartoon or illustrated character with realistic lip-sync, expressive emotions, and a matching AI voice.'
+    },
+    {
+        title: 'How to Create an AI Avatar for Healthcare Marketing',
+        href: '/learning/ai-avatar-healthcare-marketing',
+        image: null,
+        description: 'Build a professional, trustworthy AI avatar presenter for patient education, clinic promotions, and medical marketing videos.'
+    }
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+
 function injectLogoText() {
     // Target only the actual logo links that contain the nav-logo images
     var logoLinks = document.querySelectorAll('a[href="/"]');
@@ -42,21 +76,169 @@ function transformSidebarHeaders() {
     });
 }
 
+function buildTutorialCard(tutorial) {
+    const a = document.createElement('a');
+    a.className = 'tutorial-card';
+    a.href = tutorial.href;
+    a.dataset.category = 'tutorials';
+
+    const content = document.createElement('div');
+    content.className = 'tutorial-card-content';
+
+    // Featured image area
+    const imageWrapper = document.createElement('div');
+    imageWrapper.className = 'tutorial-image-wrapper';
+
+    if (tutorial.image) {
+        const img = document.createElement('img');
+        img.className = 'tutorial-image';
+        img.src = tutorial.image;
+        img.alt = tutorial.title;
+        imageWrapper.appendChild(img);
+    } else {
+        // Black placeholder
+        imageWrapper.classList.add('tutorial-image-placeholder');
+    }
+
+    // Title (below image)
+    const title = document.createElement('h3');
+    title.className = 'tutorial-title';
+    title.textContent = tutorial.title;
+
+    // Description
+    const desc = document.createElement('p');
+    desc.className = 'tutorial-description';
+    desc.textContent = tutorial.description;
+
+    content.appendChild(imageWrapper);
+    content.appendChild(title);
+    content.appendChild(desc);
+    a.appendChild(content);
+    return a;
+}
+
+function initTutorialsPagination() {
+    const grid = document.getElementById('tutorials-grid-container');
+    const paginationContainer = document.getElementById('tutorials-pagination');
+    if (!grid || !paginationContainer) return;
+
+    // Check if we already initialized to avoid duplicate observers/bindings
+    if (grid.dataset.paginated === 'true') return;
+    grid.dataset.paginated = 'true';
+
+    // Render cards from TUTORIALS data array
+    grid.innerHTML = '';
+    TUTORIALS.forEach(tutorial => {
+        grid.appendChild(buildTutorialCard(tutorial));
+    });
+
+    const items = Array.from(grid.querySelectorAll('.tutorial-card'));
+    const searchInput = document.getElementById('tutorials-search');
+
+    const itemsPerPage = 6;
+    let currentPage = 1;
+    let searchQuery = '';
+
+    function getFilteredItems() {
+        return items.filter(item => {
+            const title = (item.querySelector('.tutorial-title')?.innerText || '').toLowerCase();
+            const desc = (item.querySelector('.tutorial-description')?.innerText || '').toLowerCase();
+            const matchesSearch = searchQuery === '' || title.includes(searchQuery) || desc.includes(searchQuery);
+            return matchesSearch;
+        });
+    }
+
+    function showPage(page) {
+        currentPage = page;
+        const filtered = getFilteredItems();
+        const totalPages = Math.ceil(filtered.length / itemsPerPage);
+
+        if (currentPage > totalPages) currentPage = Math.max(1, totalPages);
+
+        const start = (currentPage - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+
+        // Hide all first
+        items.forEach(item => {
+            item.style.display = 'none';
+        });
+
+        // Show only active & visible ones
+        filtered.forEach((item, index) => {
+            if (index >= start && index < end) {
+                item.style.display = 'flex';
+            }
+        });
+
+        renderPagination(filtered.length);
+
+        // Scroll to top of the grid smoothly if user paginates
+        if (page > 1 || grid.getBoundingClientRect().top < 0) {
+            grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+
+    function renderPagination(totalActiveItems) {
+        paginationContainer.innerHTML = '';
+        const totalPages = Math.ceil(totalActiveItems / itemsPerPage);
+        if (totalPages <= 1) return;
+
+        // Prev button
+        const prevBtn = document.createElement('button');
+        prevBtn.className = 'pagination-btn';
+        prevBtn.innerText = 'Prev';
+        prevBtn.disabled = currentPage === 1;
+        prevBtn.addEventListener('click', () => showPage(currentPage - 1));
+        paginationContainer.appendChild(prevBtn);
+
+        // Page numbers
+        for (let i = 1; i <= totalPages; i++) {
+            const pageBtn = document.createElement('button');
+            pageBtn.className = 'pagination-btn' + (i === currentPage ? ' active' : '');
+            pageBtn.innerText = i;
+            pageBtn.addEventListener('click', () => showPage(i));
+            paginationContainer.appendChild(pageBtn);
+        }
+
+        // Next button
+        const nextBtn = document.createElement('button');
+        nextBtn.className = 'pagination-btn';
+        nextBtn.innerText = 'Next';
+        nextBtn.disabled = currentPage === totalPages;
+        nextBtn.addEventListener('click', () => showPage(currentPage + 1));
+        paginationContainer.appendChild(nextBtn);
+    }
+
+    // Set up search event listener
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value.toLowerCase().trim();
+            currentPage = 1;
+            showPage(1);
+        });
+    }
+
+    showPage(1);
+}
+
 // Run on initial load
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
         transformSidebarHeaders();
         injectLogoText();
+        initTutorialsPagination();
     });
 } else {
     transformSidebarHeaders();
     injectLogoText();
+    initTutorialsPagination();
 }
 
 // Observe for changes (SPA navigation)
 const contentObserver = new MutationObserver((mutations) => {
     transformSidebarHeaders();
     injectLogoText();
+    initTutorialsPagination();
 });
 
 // Start observing the body or a stable parent container

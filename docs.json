@@ -222,7 +222,10 @@
                     {
                         "group": "Tutorials",
                         "pages": [
-                            "learning/tutorials"
+                            "learning/tutorials",
+                            "learning/singing-ai-avatar",
+                            "learning/cartoon-character-talk",
+                            "learning/ai-avatar-healthcare-marketing"
                         ]
                     }
                 ]

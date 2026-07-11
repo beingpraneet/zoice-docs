@@ -176,3 +176,291 @@ a[href="/"] img {
     flex-shrink: 0 !important;
     max-height: 24px !important;
 }
+
+/* Tutorials Grid & Pagination Layout */
+.tutorials-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+@media (max-width: 640px) {
+    .tutorials-grid-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+/* Cards */
+.tutorial-card {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+.dark .tutorial-card {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.tutorial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px -8px rgba(0,0,0,0.15);
+    border-color: #16A34A !important;
+}
+.dark .tutorial-card:hover {
+    box-shadow: 0 12px 20px -8px rgba(0,0,0,0.5);
+    border-color: #07C983 !important;
+}
+.tutorial-card-content {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.tutorial-title {
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    color: #1e293b !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.75rem !important;
+    line-height: 1.4 !important;
+}
+.dark .tutorial-title {
+    color: #f1f5f9 !important;
+}
+.tutorial-image-wrapper {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    border: 1px solid #f1f5f9;
+    background: #000000;
+}
+.dark .tutorial-image-wrapper {
+    border-color: #334155;
+    background: #000000;
+}
+.tutorial-image-placeholder {
+    width: 100%;
+    height: 220px;
+    background: #000000;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+.tutorial-image {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    transition: transform 0.5s ease;
+}
+.tutorial-card:hover .tutorial-image {
+    transform: scale(1.05);
+}
+.tutorial-description {
+    font-size: 0.875rem !important;
+    color: #64748b !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    flex-grow: 1;
+}
+.dark .tutorial-description {
+    color: #94a3b8 !important;
+}
+
+/* Pagination */
+.tutorials-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2.5rem 0;
+}
+.pagination-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    color: #475569;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.5rem;
+}
+.dark .pagination-btn {
+    border-color: #334155;
+    background: #1e293b;
+    color: #94a3b8;
+}
+.pagination-btn:hover:not(:disabled) {
+    border-color: #16A34A;
+    color: #16A34A;
+    background: #f0fdf4;
+}
+.dark .pagination-btn:hover:not(:disabled) {
+    border-color: #07C983;
+    color: #07C983;
+    background: #064e3b;
+}
+.pagination-btn.active {
+    background: #16A34A;
+    color: #ffffff;
+    border-color: #16A34A;
+}
+.dark .pagination-btn.active {
+    background: #07C983;
+    color: #0f172a;
+    border-color: #07C983;
+}
+.pagination-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Custom Header Layout & Breadcrumbs */
+.custom-breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.breadcrumb-separator {
+    color: #cbd5e1;
+}
+.breadcrumb-item.active {
+    color: #0f172a;
+    font-weight: 500;
+}
+.dark .breadcrumb-item.active {
+    color: #f1f5f9;
+}
+
+.custom-page-title {
+    font-size: 2.25rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.025em !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+    color: #0f172a !important;
+}
+.dark .custom-page-title {
+    color: #ffffff !important;
+}
+.custom-page-title .highlight {
+    border-bottom: 3px solid #16A34A;
+}
+.dark .custom-page-title .highlight {
+    border-bottom-color: #07C983;
+}
+.custom-page-subtitle {
+    font-size: 1.1rem !important;
+    color: #475569 !important;
+    margin-bottom: 2rem !important;
+}
+.dark .custom-page-subtitle {
+    color: #94a3b8 !important;
+}
+
+/* Search Bar (Screenshot matching) */
+.search-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.search-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.75rem;
+    font-size: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 9999px; /* Oval capsule layout */
+    background: #ffffff;
+    color: #0f172a;
+    outline: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.dark .search-input {
+    border-color: #334155;
+    background: #1e293b;
+    color: #ffffff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.search-input:focus {
+    border-color: #16A34A;
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+}
+.dark .search-input:focus {
+    border-color: #07C983;
+    box-shadow: 0 0 0 3px rgba(7, 201, 131, 0.15);
+}
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #94a3b8;
+    pointer-events: none;
+}
+
+/* Category Pills (Screenshot matching) */
+.category-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+.category-pill {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #0f172a;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.dark .category-pill {
+    color: #f1f5f9;
+    background: #1e293b;
+    border-color: #334155;
+}
+.category-pill:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}
+.dark .category-pill:hover {
+    background: #334155;
+    border-color: #475569;
+}
+.category-pill.active {
+    background: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
+}
+.dark .category-pill.active {
+    background: #ffffff;
+    color: #0f172a;
+    border-color: #ffffff;
+}
