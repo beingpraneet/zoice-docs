@@ -19,7 +19,7 @@ const TUTORIALS = [
     {
         title: 'How to Make a Singing AI Avatar Video',
         href: '/learning/singing-ai-avatar',
-        image: null,
+        image: '/images/how-to-make-a-singing-ai-avatar-video-using-ai.png',
         description: 'Create singing AI avatar videos by combining your talking avatars with customized vocal tracks or uploaded music.'
     },
     {
