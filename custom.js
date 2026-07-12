@@ -31,8 +31,8 @@ const TUTORIALS = [
     {
         title: 'How to Create an AI Avatar for Healthcare Marketing',
         href: '/learning/ai-avatar-healthcare-marketing',
-        image: null,
-        description: 'Build a professional, trustworthy AI avatar presenter for patient education, clinic promotions, and medical marketing videos.'
+        image: '/images/how-to-create-ai-avatar-for-healthcare-marketing.jpg',
+        description: 'Learn how to create an AI avatar for healthcare marketing using AI avatars with Zoice. Make patient education, wellness tips, medical awareness, and training videos without a camera.'
     }
 ];
 
