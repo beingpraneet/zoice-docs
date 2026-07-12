@@ -25,7 +25,7 @@ const TUTORIALS = [
     {
         title: 'How to Make a Cartoon Character Talk Using AI',
         href: '/learning/cartoon-character-talk',
-        image: null,
+        image: '/images/how-to-make-a-cartoon-character-talk-using-ai.png',
         description: 'Animate any cartoon or illustrated character with realistic lip-sync, expressive emotions, and a matching AI voice.'
     },
     {
