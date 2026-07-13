@@ -5,12 +5,12 @@
 .DS_Store
 Thumbs.db
 
-# Large media files
-*.mp4
-*.mov
-*.avi
-*.mkv
-*.webm
+# Large media files (kept tracked so Mintlify can serve them as static assets)
+# *.mp4
+# *.mov
+# *.avi
+# *.mkv
+# *.webm
 
 # (Optional: Sometimes images are needed in docs, but let's be careful)
 # images/
