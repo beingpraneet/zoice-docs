@@ -221,17 +221,54 @@ function initTutorialsPagination() {
     showPage(1);
 }
 
+/**
+ * Finds any <a> links pointing to .mp3 files and replaces them with
+ * a real HTML5 <audio> player injected via JavaScript, bypassing
+ * Mintlify's MDX sanitiser which strips <audio> tags server-side.
+ */
+function injectAudioPlayers() {
+    // Find all links whose href ends with .mp3
+    const audioLinks = document.querySelectorAll('a[href$=".mp3"]');
+    audioLinks.forEach(function (link) {
+        // Avoid double-injecting
+        if (link.dataset.audioInjected) return;
+        link.dataset.audioInjected = 'true';
+
+        const src = link.getAttribute('href');
+
+        const wrapper = document.createElement('div');
+        wrapper.style.cssText = 'margin: 0.75rem 0;';
+
+        const audio = document.createElement('audio');
+        audio.controls = true;
+        audio.style.cssText = 'width: 100%; border-radius: 0.5rem;';
+        audio.preload = 'metadata';
+
+        const source = document.createElement('source');
+        source.src = src;
+        source.type = 'audio/mpeg';
+
+        audio.appendChild(source);
+        wrapper.appendChild(audio);
+
+        // Replace the link with the audio player
+        link.parentNode.replaceChild(wrapper, link);
+    });
+}
+
 // Run on initial load
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
         transformSidebarHeaders();
         injectLogoText();
         initTutorialsPagination();
+        injectAudioPlayers();
     });
 } else {
     transformSidebarHeaders();
     injectLogoText();
     initTutorialsPagination();
+    injectAudioPlayers();
 }
 
 // Observe for changes (SPA navigation)
@@ -239,6 +276,7 @@ const contentObserver = new MutationObserver((mutations) => {
     transformSidebarHeaders();
     injectLogoText();
     initTutorialsPagination();
+    injectAudioPlayers();
 });
 
 // Start observing the body or a stable parent container
