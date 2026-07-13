@@ -256,6 +256,41 @@ function injectAudioPlayers() {
     });
 }
 
+/**
+ * Finds any <a> links pointing to .mp4 files and replaces them with
+ * a real HTML5 <video> player injected via JavaScript, bypassing
+ * Mintlify's MDX sanitiser.
+ */
+function injectVideoPlayers() {
+    // Find all links whose href ends with .mp4
+    const videoLinks = document.querySelectorAll('a[href$=".mp4"]');
+    videoLinks.forEach(function (link) {
+        // Avoid double-injecting
+        if (link.dataset.videoInjected) return;
+        link.dataset.videoInjected = 'true';
+
+        const src = link.getAttribute('href');
+
+        const wrapper = document.createElement('div');
+        wrapper.style.cssText = 'margin: 0.75rem 0;';
+
+        const video = document.createElement('video');
+        video.controls = true;
+        video.style.cssText = 'width: 100%; border-radius: 0.75rem;';
+        video.preload = 'metadata';
+
+        const source = document.createElement('source');
+        source.src = src;
+        source.type = 'video/mp4';
+
+        video.appendChild(source);
+        wrapper.appendChild(video);
+
+        // Replace the link with the video player
+        link.parentNode.replaceChild(wrapper, link);
+    });
+}
+
 // Run on initial load
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
@@ -263,12 +298,14 @@ if (document.readyState === 'loading') {
         injectLogoText();
         initTutorialsPagination();
         injectAudioPlayers();
+        injectVideoPlayers();
     });
 } else {
     transformSidebarHeaders();
     injectLogoText();
     initTutorialsPagination();
     injectAudioPlayers();
+    injectVideoPlayers();
 }
 
 // Observe for changes (SPA navigation)
@@ -277,6 +314,7 @@ const contentObserver = new MutationObserver((mutations) => {
     injectLogoText();
     initTutorialsPagination();
     injectAudioPlayers();
+    injectVideoPlayers();
 });
 
 // Start observing the body or a stable parent container
