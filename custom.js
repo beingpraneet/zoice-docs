@@ -37,7 +37,7 @@ const TUTORIALS = [
     {
         title: 'How to Create a Podcast with AI',
         href: '/learning/podcast-with-ai',
-        image: '/images/how-to-create-a-podcast-with-ai.png',
+        image: '/images/how-to-create-a-podcast-video-with-ai.jpg',
         description: 'Generate professional podcast episodes using AI voices — no microphone or studio needed. Write a script, pick a voice, and publish.'
     },
     {
