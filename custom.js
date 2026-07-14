@@ -33,6 +33,18 @@ const TUTORIALS = [
         href: '/learning/ai-avatar-healthcare-marketing',
         image: '/images/how-to-create-ai-avatar-for-healthcare-marketing.jpg',
         description: 'Learn how to create an AI avatar for healthcare marketing using AI avatars with Zoice. Make patient education, wellness tips, medical awareness, and training videos without a camera.'
+    },
+    {
+        title: 'How to Create a Podcast with AI',
+        href: '/learning/podcast-with-ai',
+        image: '/images/how-to-create-a-podcast-with-ai.png',
+        description: 'Generate professional podcast episodes using AI voices — no microphone or studio needed. Write a script, pick a voice, and publish.'
+    },
+    {
+        title: 'How to Create an AI Astrologer Video Using AI',
+        href: '/learning/ai-astrologer-video',
+        image: '/images/how-to-create-an-ai-astrologer-video-using-ai.png',
+        description: 'Build a mystical AI astrologer avatar and generate engaging horoscope, zodiac, and spiritual guidance videos in minutes.'
     }
 ];
 
