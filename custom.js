@@ -43,7 +43,7 @@ const TUTORIALS = [
     {
         title: 'How to Create an AI Astrologer Video Using AI',
         href: '/learning/ai-astrologer-video',
-        image: '/images/how-to-create-an-ai-astrologer-video-using-ai.png',
+        image: '/images/how-to-create-an-ai-astrologer-video-using-ai.jpg',
         description: 'Build a mystical AI astrologer avatar and generate engaging horoscope, zodiac, and spiritual guidance videos in minutes.'
     }
 ];
