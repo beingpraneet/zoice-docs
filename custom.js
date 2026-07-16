@@ -45,6 +45,24 @@ const TUTORIALS = [
         href: '/learning/ai-astrologer-video',
         image: '/images/how-to-create-an-ai-astrologer-video-using-ai.jpg',
         description: 'Build a mystical AI astrologer avatar and generate engaging horoscope, zodiac, and spiritual guidance videos in minutes.'
+    },
+    {
+        title: 'How to Make a Singing Animal Avatar Video Using AI',
+        href: '/learning/singing-animal-avatar',
+        image: '/images/how-to-make-a-singing-animal-avatar-video-using-ai.jpg',
+        description: 'Turn your pet photos or any animal image into a realistic singing avatar with accurate lip-syncing and facial expressions in minutes.'
+    },
+    {
+        title: 'How to Create an AI News Anchor Video',
+        href: '/learning/ai-news-anchor',
+        image: '/images/how-to-create-an-ai-news-anchor-video.jpg',
+        description: 'Turn any image into a virtual news presenter and deliver breaking news, corporate updates, and announcements in minutes.'
+    },
+    {
+        title: 'How to Create a Real Estate AI Avatar Video',
+        href: '/learning/real-estate-ai-avatar',
+        image: '/images/how-to-create-a-real-estate-ai-avatar.jpg',
+        description: 'Generate virtual property tours, neighborhood guides, and market updates with a professional AI real estate agent.'
     }
 ];
 
