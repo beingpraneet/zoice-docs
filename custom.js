@@ -81,6 +81,18 @@ const TUTORIALS = [
         href: '/learning/photo-avatars',
         image: '/images/how-to-get-started-with-photo-avatars.jpg',
         description: 'Upload a photo or generate one with AI to create a realistic talking avatar. Learn prompt writing, motion tips, and how to produce professional videos in minutes.'
+    },
+    {
+        title: 'How to Create an AI Avatar for Finance Advisor',
+        href: '/learning/ai-avatar-finance-advisor',
+        image: '/images/how-to-create-ai-avatar-for-finance-advisor.jpg',
+        description: 'Create investment guides, market updates, and financial planning videos with a professional AI finance advisor avatar — no camera or studio needed.'
+    },
+    {
+        title: 'How to Create an AI Avatar for Lawyer',
+        href: '/learning/ai-avatar-lawyer',
+        image: '/images/how-to-create-ai-avatar-for-lawyer.jpg',
+        description: 'Produce legal explainer videos, client education content, and law firm introductions using a professional AI lawyer avatar in minutes.'
     }
 ];
 
