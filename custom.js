@@ -66,8 +66,8 @@ const TUTORIALS = [
     },
     {
         title: 'How to Create Your First Digital Twin with Zoice Avatar X',
-        href: '/learning/create-your-digital-twin-video-x',
-        image: '/images/how-to-create-your-digital-twin-video-avatar-x.jpg',
+        href: '/learning/create-your-digital-twin-video-avatar-x',
+        image: '/images/how-to-create-digital-twin-avatar-x.jpg',
         description: 'Turn a single photo and voice recording into a hyper-realistic AI twin that delivers any script in 100+ languages — no camera needed.'
     },
     {
