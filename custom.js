@@ -93,6 +93,18 @@ const TUTORIALS = [
         href: '/learning/create-your-digital-twin-video-avatar-x',
         image: '/images/how-to-create-digital-twin-avatar-x.jpg',
         description: 'Turn a single photo and voice recording into a hyper-realistic AI twin that delivers any script in 100+ languages — no camera needed.'
+    },
+    {
+        title: 'How to Make a Singing Pet Avatar Video Using AI',
+        href: '/learning/singing-pet',
+        image: '/images/how-to-make-a-singing-pet-video-using-ai.jpg',
+        description: 'Turn your pet photos into a realistic singing avatar with accurate lip-syncing and facial expressions in minutes.'
+    },
+    {
+        title: 'How to Make a Talking Pet Video Using AI',
+        href: '/learning/talking-pet',
+        image: '/images/how-to-make-a-talking-pet-video-using-ai.jpg',
+        description: 'Upload your pet photo, select a voice, add a script, and generate a realistic talking pet video in minutes.'
     }
 ];
 
