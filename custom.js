@@ -65,12 +65,6 @@ const TUTORIALS = [
         description: 'Generate virtual property tours, neighborhood guides, and market updates with a professional AI real estate agent.'
     },
     {
-        title: 'How to Create Your First Digital Twin with Zoice Avatar X',
-        href: '/learning/create-your-digital-twin-video-avatar-x',
-        image: '/images/how-to-create-digital-twin-avatar-x.jpg',
-        description: 'Turn a single photo and voice recording into a hyper-realistic AI twin that delivers any script in 100+ languages — no camera needed.'
-    },
-    {
         title: 'How to Create an Avatar Using Zoice Avatar X Photo-to-Video',
         href: '/learning/avatar-x-photo-to-video',
         image: '/images/how-to-create-avatar-photo-to-video.jpg',
