@@ -105,6 +105,12 @@ const TUTORIALS = [
         href: '/learning/talking-pet',
         image: '/images/how-to-make-a-talking-pet-video-using-ai.jpg',
         description: 'Upload your pet photo, select a voice, add a script, and generate a realistic talking pet video in minutes.'
+    },
+    {
+        title: 'How to Create an AI Stand Up Comedy Video',
+        href: '/learning/ai-stand-up-comedy-video',
+        image: '/images/how-to-create-ai-stand-up-comedy-video.jpg',
+        description: 'Turn any image or character into a digital stand-up comedian and generate funny stand-up comedy videos in minutes.'
     }
 ];
 
