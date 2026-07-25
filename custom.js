@@ -101,7 +101,7 @@ const TUTORIALS = [
         description: 'Turn your pet photos into a realistic singing avatar with accurate lip-syncing and facial expressions in minutes.'
     },
     {
-        title: 'How to Make a Talking Pet Video Using AI',
+        title: 'How to Make a Talking Pet Avatar Video Using AI',
         href: '/learning/talking-pet',
         image: '/images/how-to-make-a-talking-pet-video-using-ai.jpg',
         description: 'Upload your pet photo, select a voice, add a script, and generate a realistic talking pet video in minutes.'
