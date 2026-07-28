@@ -1,11 +1,11 @@
 ---
 title: Quick Start
-description: Generate your first AI video with the Zoice API in minutes — authenticate, send one request, and get back an avatar video.
+description: Generate your first AI video with the Zoice API in minutes — authenticate, send one request, poll the queue, and get back an MP4.
 ---
 
 ## Welcome to Zoice Developer Platform
 
-Zoice Dev provides high-performance, developer-friendly APIs to generate realistic AI avatar videos, human-grade text-to-speech audio, custom image generations, and voice profiles. Integrate all these capabilities under one unified developer account.
+Zoice Dev provides high-performance, developer-friendly APIs to generate realistic AI avatar videos, human-grade text-to-speech audio, and custom image variations.
 
 ---
 
@@ -15,11 +15,11 @@ To get started, you will need a Zoice developer account and an API Key:
 
 1. Visit the [Zoice Dev Console](https://dev.zoice.com/).
 2. Log in or create a new account by clicking **Get Started**.
-3. Locate your API Key on the developer dashboard. Keep this key secure, and do not share it publicly.
+3. Generate or copy your API Key from the developer dashboard. Keep this key secure.
 
 ---
 
-## 2. Authenticate Your Requests
+## 2. Authentication
 
 All requests to Zoice APIs require authorization. Add the following header to your API requests:
 
@@ -31,82 +31,139 @@ Authorization: Bearer <YOUR_ZOICE_API_KEY>
 
 ## 3. Generate Your First AI Avatar Video
 
-Create a talking avatar video by sending a `POST` request to the `zoice/avatar-x` endpoint. 
+Because video rendering is resource-intensive, generations are handled asynchronously using a fast queue system.
 
-Below are code examples in various languages showing how to initiate a video generation:
+### Step 1: Send the Generation Request
+You can submit a request using either **Profile IDs** (existing avatar/voice profiles on your dashboard) or directly with **Media URLs** (custom images/vocal audio files).
+
+Submit a `POST` request to `https://api.zoice.com/v1/run/zoice/avatar-x`.
 
 <CodeGroup>
 
-```bash cURL
-curl -X POST "https://dev.zoice.com/v1/run/zoice/avatar-x" \
+```bash Request (Using Profile IDs)
+curl -X POST "https://api.zoice.com/v1/run/zoice/avatar-x" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $ZOICE_API_KEY" \
   -d '{
     "avatar_id": "ad4ed5d7-22eb-4939-8ee2-a16fbd9dcf1b",
     "voice_id": "a737e319-8b5b-43e8-a189-c45fcd9def3a",
-    "script_text": "Hi! This is my first digital twin talking using the Zoice Avatar X API."
+    "script_text": "Hi, this is my digital avatar talking!",
+    "action_prompt": "Person is feeling excited.",
+    "aspect_ratio": "9:16",
+    "resolution": "1080p"
   }'
 ```
 
-```javascript Node.js
-fetch("https://dev.zoice.com/v1/run/zoice/avatar-x", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    "Authorization": `Bearer ${process.env.ZOICE_API_KEY}`
-  },
-  body: JSON.stringify({
-    avatar_id: "ad4ed5d7-22eb-4939-8ee2-a16fbd9dcf1b",
-    voice_id: "a737e319-8b5b-43e8-a189-c45fcd9def3a",
-    script_text: "Hi! This is my first digital twin talking using the Zoice Avatar X API."
-  })
-})
-  .then(res => res.json())
-  .then(data => console.log(data))
-  .catch(err => console.error(err));
-```
-
-```python Python
-import os
-import requests
-
-api_key = os.getenv("ZOICE_API_KEY")
-url = "https://dev.zoice.com/v1/run/zoice/avatar-x"
-
-headers = {
-    "Content-Type": "application/json",
-    "Authorization": f"Bearer {api_key}"
-}
-
-payload = {
-    "avatar_id": "ad4ed5d7-22eb-4939-8ee2-a16fbd9dcf1b",
-    "voice_id": "a737e319-8b5b-43e8-a189-c45fcd9def3a",
-    "script_text": "Hi! This is my first digital twin talking using the Zoice Avatar X API."
-}
-
-response = requests.post(url, json=payload, headers=headers)
-print(response.json())
+```bash Request (Using Media URLs)
+curl -X POST "https://api.zoice.com/v1/run/zoice/avatar-x" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $ZOICE_API_KEY" \
+  -d '{
+    "input_image_url": "https://assets.zoice.com/presenter-sample.png",
+    "input_voice_url": "https://assets.zoice.com/voice-sample.mp3",
+    "action_prompt": "Person is feeling excited.",
+    "aspect_ratio": "9:16",
+    "resolution": "1080p"
+  }'
 ```
 
 </CodeGroup>
 
-### Request Parameters
-
-| Parameter | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `avatar_id` | `string` | **Yes** | The unique identifier of the avatar presenter character to use. |
-| `voice_id` | `string` | **Yes** | The unique identifier of the voice profile to speak the script. |
-| `script_text` | `string` | **Yes** | The text content to speak. Recommended maximum of 1,000 characters. |
-
-### Response Example
-
-A successful request returns a JSON object containing the status and the generated video URL:
+### Step 2: Get the Request ID
+The request returns immediately with a `request_id` and a `processing` status:
 
 ```json
 {
-  "id": "job_01h7x8w2z9vpxqrsyvw2345678",
-  "status": "completed",
-  "output_video_url": "https://static.zoice.com/generated/videos/job_01h7x8w2z9vpxqrsyvw2345678.mp4",
-  "created_at": "2026-07-28T20:00:00Z"
+  "request_id": "d1f47b9c-6387-49d0-a403-85fbd9dcf1b7",
+  "status": "processing"
+}
+```
+
+### Step 3: Poll for Output
+Send a `GET` request to `https://api.zoice.com/v1/fetch/{request_id}` to check the task status:
+
+```bash Polling Request
+curl -X GET "https://api.zoice.com/v1/fetch/d1f47b9c-6387-49d0-a403-85fbd9dcf1b7" \
+  -H "Authorization: Bearer $ZOICE_API_KEY"
+```
+
+Once the generation is ready, you will receive a `success` status with the final video URL:
+
+```json Polling Response
+{
+  "status": "success",
+  "request_id": "d1f47b9c-6387-49d0-a403-85fbd9dcf1b7",
+  "type": "video",
+  "output": {
+    "credits": 909,
+    "result": "https://assets.zoice.com/generated/job-output-video.mp4"
+  }
+}
+```
+
+---
+
+## 4. Request Schema (`zoice/avatar-x`)
+
+### Input Parameters
+
+| Parameter | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| `avatar_id` | `string` | No | ID of the desired avatar profile character. |
+| `avatar_image_url` | `string` | No | URL of an existing image of the selected avatar profile. |
+| `input_image_url` | `string` | No | Direct URL to an image featuring the desired person/character. |
+| `voice_id` | `string` | No | ID of the desired voice profile. |
+| `script_text` | `string` | No | Text to speak using the selected voice profile. |
+| `input_voice_url` | `string` | No | Direct URL to a vocal audio file (`.mp3` or `.wav`). |
+| `action_prompt` | `string` | No | Description influencing facial actions/emotions (e.g., "Person is feeling excited"). |
+| `aspect_ratio` | `string` | No | Output video aspect ratio (e.g., `9:16`, `16:9`, `1:1`). Default is `9:16`. |
+| `resolution` | `string` | No | Video resolution quality (e.g., `720p`, `1080p`, `4k`). Default is `1080p`. |
+
+---
+
+## 5. Other Zoice Models
+
+### Avatar Editor (`zoice/avatar-edit`)
+Generate image variations of a specific avatar.
+* **Endpoint**: `POST https://api.zoice.com/v1/run/zoice/avatar-edit`
+* **Request Payload**:
+```json
+{
+  "avatar_id": "ad4ed5d7-22eb-4939-8ee2-a16fbd9dcf1b",
+  "prompt": "wearing professional suit, studio lighting",
+  "aspect_ratio": "16:9"
+}
+```
+
+### Speech Generator (`zoice/speech`)
+Generate premium, human-grade text-to-speech audio.
+* **Endpoint**: `POST https://api.zoice.com/v1/run/zoice/speech`
+* **Request Payload**:
+```json
+{
+  "voice_id": "a737e319-8b5b-43e8-a189-c45fcd9def3a",
+  "text": "Welcome to the future of synthetic media.",
+  "speed": 1.0
+}
+```
+
+### Reusable Avatar Profile (`zoice/avatar-profile`)
+* **Endpoint**: `POST https://api.zoice.com/v1/run/zoice/avatar-profile`
+* **Request Payload**:
+```json
+{
+  "name": "Sarah Business Presenter",
+  "base_image_url": "https://example.com/sarah-photo.jpg",
+  "pose": "standing"
+}
+```
+
+### Reusable Voice Profile (`zoice/voice-profile`)
+* **Endpoint**: `POST https://api.zoice.com/v1/run/zoice/voice-profile`
+* **Request Payload**:
+```json
+{
+  "voice_name": "Custom Corporate Voice",
+  "sample_audio_url": "https://example.com/corporate-voice-sample.mp3"
 }
 ```
