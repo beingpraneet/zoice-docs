@@ -111,6 +111,12 @@ const TUTORIALS = [
         href: '/learning/ai-stand-up-comedy-video',
         image: '/images/how-to-create-ai-stand-up-comedy-video.jpg',
         description: 'Turn any image or character into a digital stand-up comedian and generate funny stand-up comedy videos in minutes.'
+    },
+    {
+        title: 'How to Add Products to Your AI Avatar Video',
+        href: '/learning/add-products-to-avatar',
+        image: '/images/how-to-add-products-to-your-avatar.jpg',
+        description: 'Upload your presenter avatar, write a promotional script for your product, and generate a professional product showcase video in minutes.'
     }
 ];
 

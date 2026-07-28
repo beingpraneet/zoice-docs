@@ -238,7 +238,19 @@
                             "learning/create-your-digital-twin-video-avatar-x",
                             "learning/singing-pet",
                             "learning/talking-pet",
-                            "learning/ai-stand-up-comedy-video"
+                            "learning/ai-stand-up-comedy-video",
+                            "learning/add-products-to-avatar"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Developer",
+                "groups": [
+                    {
+                        "group": "Getting Started",
+                        "pages": [
+                            "developer/quickstart"
                         ]
                     }
                 ]
