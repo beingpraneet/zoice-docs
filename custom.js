@@ -23,6 +23,12 @@ const TUTORIALS = [
         description: 'Create singing AI avatar videos by combining your talking avatars with customized vocal tracks or uploaded music.'
     },
     {
+        title: 'How to Make an Old Photo Sing a Song Using AI',
+        href: '/learning/old-photo-singing',
+        image: '/images/how-to-make-old-photo-sing-a-song.png',
+        description: 'Bring historic portraits or family photos to life by animating them to sing your favorite songs with realistic facial expressions.'
+    },
+    {
         title: 'How to Make a Cartoon Character Talk Using AI',
         href: '/learning/cartoon-character-talk',
         image: '/images/how-to-make-a-cartoon-character-talk-using-ai.png',
@@ -111,12 +117,6 @@ const TUTORIALS = [
         href: '/learning/ai-stand-up-comedy-video',
         image: '/images/how-to-create-ai-stand-up-comedy-video.jpg',
         description: 'Turn any image or character into a digital stand-up comedian and generate funny stand-up comedy videos in minutes.'
-    },
-    {
-        title: 'How to Add Products to Your AI Avatar Video',
-        href: '/learning/add-products-to-avatar',
-        image: '/images/how-to-add-products-to-your-avatar.jpg',
-        description: 'Upload your presenter avatar, write a promotional script for your product, and generate a professional product showcase video in minutes.'
     }
 ];
 

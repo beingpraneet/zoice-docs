@@ -224,6 +224,7 @@
                         "pages": [
                             "learning/tutorials",
                             "learning/singing-ai-avatar",
+                            "learning/old-photo-singing",
                             "learning/cartoon-character-talk",
                             "learning/ai-avatar-healthcare-marketing",
                             "learning/ai-podcast-video",
@@ -238,8 +239,7 @@
                             "learning/create-your-digital-twin-video-avatar-x",
                             "learning/singing-pet",
                             "learning/talking-pet",
-                            "learning/ai-stand-up-comedy-video",
-                            "learning/add-products-to-avatar"
+                            "learning/ai-stand-up-comedy-video"
                         ]
                     }
                 ]
