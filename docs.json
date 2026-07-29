@@ -243,17 +243,6 @@
                         ]
                     }
                 ]
-            },
-            {
-                "tab": "Developer",
-                "groups": [
-                    {
-                        "group": "Getting Started",
-                        "pages": [
-                            "developer/quickstart"
-                        ]
-                    }
-                ]
             }
         ]
     },
