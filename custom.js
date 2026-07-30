@@ -31,7 +31,7 @@ const TUTORIALS = [
     {
         title: 'How to Make AI Birthday Song Video with Photo',
         href: '/learning/ai-birthday-song-video',
-        image: '/images/how-to-make-ai-birthday-song-video-with-photo.png',
+        image: '/images/how-to-make-ai-birthday-song-video-with-photo.jpg',
         description: 'Make a personalized AI birthday song video with photo of your loved ones to surprise them on their special day.'
     },
     {
