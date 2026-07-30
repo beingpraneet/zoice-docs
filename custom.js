@@ -25,8 +25,20 @@ const TUTORIALS = [
     {
         title: 'How to Make an Old Photo Sing a Song Using AI',
         href: '/learning/old-photo-singing',
-        image: '/images/how-to-make-old-photo-sing-a-song.png',
+        image: '/images/how-to-make-old-photo-sing-a-song.jpg',
         description: 'Bring historic portraits or family photos to life by animating them to sing your favorite songs with realistic facial expressions.'
+    },
+    {
+        title: 'How to Make AI Birthday Song Video with Photo',
+        href: '/learning/ai-birthday-song-video',
+        image: '/images/how-to-make-ai-birthday-song-video-with-photo.png',
+        description: 'Make a personalized AI birthday song video with photo of your loved ones to surprise them on their special day.'
+    },
+    {
+        title: 'How to Create Lip Sync Photo to Song',
+        href: '/learning/lip-sync-photo-to-song',
+        image: '/images/how-to-create-lip-sync-photo-to-song.png',
+        description: 'Learn how to create lip sync photo to song using AI to generate realistic vocal performances in minutes.'
     },
     {
         title: 'How to Make a Cartoon Character Talk Using AI',
