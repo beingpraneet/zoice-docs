@@ -37,7 +37,7 @@ const TUTORIALS = [
     {
         title: 'How to Create Lip Sync Photo to Song',
         href: '/learning/lip-sync-photo-to-song',
-        image: '/images/how-to-create-lip-sync-photo-to-song.png',
+        image: '/images/how-to-create-lip-sync-photo-to-song.jpg',
         description: 'Learn how to create lip sync photo to song using AI to generate realistic vocal performances in minutes.'
     },
     {
