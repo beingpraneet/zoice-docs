@@ -41,6 +41,24 @@ const TUTORIALS = [
         description: 'Learn how to create lip sync photo to song using AI to generate realistic vocal performances in minutes.'
     },
     {
+        title: 'How to Bring Old Photos to Life',
+        href: '/learning/bring-old-photos-to-life',
+        image: '/images/how-to-bring-old-photos-to-life.jpg',
+        description: 'Discover how to bring old photos to life by animating them with realistic speech and movements using AI.'
+    },
+    {
+        title: 'How to Make a Deceased Loved One Talk',
+        href: '/learning/make-deceased-loved-one-talk',
+        image: '/images/how-to-make-a-deceased-loved-one-talk.jpg',
+        description: 'Learn how to make a deceased loved one talk using AI to preserve family memories with vocal and facial animation.'
+    },
+    {
+        title: 'How to Create Talking Photo of Deceased',
+        href: '/learning/create-talking-photo-of-deceased',
+        image: '/images/how-to-create-talking-photo-of-deceased.jpg',
+        description: 'Create talking photo of deceased relatives or historical figures using AI-powered voice and lip-sync technologies.'
+    },
+    {
         title: 'How to Make a Cartoon Character Talk Using AI',
         href: '/learning/cartoon-character-talk',
         image: '/images/how-to-make-a-cartoon-character-talk-using-ai.png',
