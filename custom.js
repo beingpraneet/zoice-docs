@@ -101,6 +101,12 @@ const TUTORIALS = [
         description: 'Generate virtual property tours, neighborhood guides, and market updates with a professional AI real estate agent.'
     },
     {
+        title: 'How to Create a Talking Product Video Using AI',
+        href: '/learning/create-talking-product-video-using-ai',
+        image: '/images/how-to-create-a-talking-product-video-using-ai.jpg',
+        description: 'Discover how to create a talking product video using AI. Generate engaging product demonstrations, e-commerce listings, and promotions without a studio.'
+    },
+    {
         title: 'How to Create an Avatar Using Zoice Avatar X Photo-to-Video',
         href: '/learning/avatar-x-photo-to-video',
         image: '/images/how-to-create-avatar-photo-to-video.jpg',
