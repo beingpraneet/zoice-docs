@@ -145,7 +145,7 @@ const TUTORIALS = [
     {
         title: 'How to Make My Dog Talk Using AI',
         href: '/learning/how-to-make-my-dog-talk-using-ai',
-        image: '/images/how-to-make-a-talking-pet-video-using-ai.jpg',
+        image: '/images/how-to-make-my-dog-talk-using-ai.jpg',
         description: 'Learn how to make your dog talk using AI. Upload your dog\'s photo, choose a voice, add a script, and generate a talking dog video.'
     },
     {
