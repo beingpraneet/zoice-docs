@@ -165,6 +165,12 @@ const TUTORIALS = [
         href: '/learning/ai-avatar-shows-emotion',
         image: '/images/how-to-create-an-ai-avatar-that-shows-emotion.jpg',
         description: 'Learn how to create an AI avatar that shows emotion using Zoice. Customize facial expressions, emotional tone, action prompts, and voice synthesis to generate expressive AI avatar videos in minutes.'
+    },
+    {
+        title: 'How to Add Products to Your Avatar',
+        href: '/learning/how-to-add-products-to-your-avatar',
+        image: '/images/how-to-add-products-to-your-avatar.jpg',
+        description: 'Learn how to add products to your avatar using Zoice. Feature e-commerce items, physical products, digital goods, and brand merchandise alongside your AI presenter for high-converting videos.'
     }
 ];
 
