@@ -159,6 +159,12 @@ const TUTORIALS = [
         href: '/learning/ai-stand-up-comedy-video',
         image: '/images/how-to-create-ai-stand-up-comedy-video.jpg',
         description: 'Turn any image or character into a digital stand-up comedian and generate funny stand-up comedy videos in minutes.'
+    },
+    {
+        title: 'How to Create an AI Avatar That Shows Emotion',
+        href: '/learning/ai-avatar-shows-emotion',
+        image: '/images/how-to-create-an-ai-avatar-that-shows-emotion.jpg',
+        description: 'Learn how to create an AI avatar that shows emotion using Zoice. Customize facial expressions, emotional tone, action prompts, and voice synthesis to generate expressive AI avatar videos in minutes.'
     }
 ];
 
