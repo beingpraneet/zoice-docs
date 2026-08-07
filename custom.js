@@ -189,6 +189,12 @@ const TUTORIALS = [
         href: '/learning/how-to-create-ai-avatar-rapping-videos',
         image: '/images/how-to-create-ai-avatar-rapping-videos.jpg',
         description: 'Learn how to create AI avatar rapping videos using Zoice. Transform photos and avatars into fast-paced talking and rapping performers in minutes.'
+    },
+    {
+        title: 'How to Make a Faceless YouTube Channel with AI Avatar',
+        href: '/learning/how-to-make-faceless-youtube-channel-with-ai-avatar',
+        image: '/images/how-to-make-faceless-youtube-channel-with-ai-avatar.jpg',
+        description: 'Learn how to make a faceless YouTube channel with AI avatar using Zoice. Build scalable niche channels and automated videos without camera recording.'
     }
 ];
 
