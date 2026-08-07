@@ -171,6 +171,24 @@ const TUTORIALS = [
         href: '/learning/how-to-add-products-to-your-avatar',
         image: '/images/how-to-add-products-to-your-avatar.jpg',
         description: 'Learn how to add products to your avatar using Zoice. Feature e-commerce items, physical products, digital goods, and brand merchandise alongside your AI presenter for high-converting videos.'
+    },
+    {
+        title: 'How to Animate Old Family Photos Using AI',
+        href: '/learning/how-to-animate-old-family-photos-using-ai',
+        image: '/images/how-to-animate-old-family-photos-using-ai.jpg',
+        description: 'Learn how to animate old family photos using AI with Zoice. Turn vintage family portraits and black-and-white pictures into realistic talking AI videos.'
+    },
+    {
+        title: 'How to Create Brand Mascot Animation Using AI',
+        href: '/learning/how-to-create-brand-mascot-animation-using-ai',
+        image: '/images/how-to-create-brand-mascot-animation-using-ai.jpg',
+        description: 'Learn how to create brand mascot animation using AI with Zoice. Animate 2D and 3D brand characters into engaging talking marketing videos.'
+    },
+    {
+        title: 'How to Create AI Avatar Rapping Videos',
+        href: '/learning/how-to-create-ai-avatar-rapping-videos',
+        image: '/images/how-to-create-ai-avatar-rapping-videos.jpg',
+        description: 'Learn how to create AI avatar rapping videos using Zoice. Transform photos and avatars into fast-paced talking and rapping performers in minutes.'
     }
 ];
 
